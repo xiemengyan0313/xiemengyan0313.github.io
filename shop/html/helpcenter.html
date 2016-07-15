@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>帮助中心</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/helpcenter.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+</head>
+<body> 
+<!--************************header***************************-->
+<div class="header">
+    <div class="headercon">
+        <div class="headerleft">
+        	<p>欢迎来到丽子美妆!</p>
+            <a class="a1" href="login.html">登录</a>
+            <a class="a2" href="register.html">注册</a> 
+        </div>
+        <div class="headerright">
+       	 
+            <ul>
+            <li class="bt1">
+            	<a href="#">更多</a>
+                <div>
+                 <ul>
+                 	<li><a href="#">邀请好友</a></li>
+                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">丽子微信</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="koubei.html">口碑</a></li>
+            <li><a href="helpcenter.html">帮助中心</a></li>
+            <li class="bt2">
+            	<a href="#">我的丽子</a>
+                <div>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的现金券</a></li>
+                        <li><a href="#">我的红包</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">会员中心</a></li>
+                     </ul>
+                </div>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--************************serach***************************-->
+<div class="search">
+    <div class="searchcon">
+    <div class="logo">
+    	<a href="index.html"><img src="../images/logo.jpg"/></a>
+    </div>
+    <div class="searchleft">
+        <form>
+            <input class="btn1" id="selectvalue" type="text" value="请输入帮助内容的关键字" onclick="showvalue()"/>
+            <input class="btn2" type="submit" value="搜索"/>
+        </form> 
+    </div>
+     <div class="searchright">
+     
+     </div>
+    </div>
+</div>
+<!--************************main***************************-->
+<div class="main">
+	<div class="maincon">
+    	<div class="mainlist">
+        	
+        	<ul>
+                <li class="li1">我是买家</li>
+                <li>我是卖家</li>
+            </ul>
+        </div>
+        <div class="mainhelp">
+        	<div class="help help1">
+            	<div class="help1left">
+                	<h2>我是买家</h2>
+                	<ul class="helpul">
+                		<li class="fl"><span>账号管理</span>
+                        	<ul class="fl2">
+                            	<li><a href="#">注册与登录</a></li>
+                            	<li><a href="#">账户信息维护</a></li>
+                        	</ul>
+                   		</li>
+                    
+                    	<li class="fl"><span>购买帮助</span>
+                    		<ul class="fl2">
+                        		<li><a href="#">优惠券</a></li>
+                            	<li><a href="#">选购商品</a></li>
+                            	<li><a href="#">支付方式</a></li>
+                            	<li><a href="#">物流信息</a></li>
+                                <li><a href="#">买家评论</a></li>
+                        	</ul>
+                    	</li>
+                    	<li class="fl"><span>退货/售后</span>
+                    		<ul class="fl2">
+                        		<li><a href="#">退货</a></li>
+                            	<li><a href="#">维权类型</a></li>
+                            	<li><a href="#">退货退款方式</a></li>
+                        	</ul>
+                    	</li>
+                    	<li class="fl"><span>丽子特色服务</span>
+                    		<ul class="fl2">
+                        		<li><a href="#">48小时发货</a></li>
+                            	<li><a href="#">全站免运费</a></li> 
+                                <li><a href="#">中国人民保险公司正品保证</a></li>   
+                        	</ul>
+                   		</li>
+               		 </ul>
+                </div> 
+                <div class="help1right">
+                	<div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>丽子用户网络服务协议</h3>
+                            <p><a href="#">丽子美妆（以下简称“丽子”）根据以下服务条款为您提供服务。这些条款可由丽子随时更新，且毋须另行丽子用户网络服务协议（以下简称“使用协议”）通知。</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>丽子平台会员规则介绍</h3>
+                            <p><a href="#">一、成为会员你将获得以下权益;二、成长值介绍;三、丽子美妆丽子币介绍</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>丽子经验值获取规则</h3>
+                            <p><a href="#">经验值 = 购买经验；购买经验的获取：成功消费金额1元 =获得 1经验值；</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>账户被盗怎么办</h3>
+                            <p><a href="#">如您的账号被盗，导致登录丽子平台失败，您需要通过QQ联系丽子客服，我们会帮您找回。</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>忘记密码怎么办</h3>
+                            <p><a href="#">用户您可以通过以下方式找回密码：1、可通过输入绑定的手机号/认证的邮箱/用户名加验证码形式找回密码（红色框内的信息），见下图：</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>可以有哪些方式登录丽子</h3>
+                            <p><a href="#">点击丽子首页（lizi.com）头部的登录或直接打开丽子登录页面（login.lizi.com），通过1）输入用户名/邮箱/手机号及密码进行登录（红色框内容）；</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>如何注册丽子账户</h3>
+                            <p><a href="#">点击丽子首页（lizi.com）头部的免费注册或直接打开丽子注册页面（lizi.com/user/register），完整填写邮箱/手机、密码、验证码（红色框内容）</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="help help2">
+            	<div class="help1left">
+                	<h2>我是卖家</h2>
+                	<ul class="helpul">
+                		<li class="fl"><span>入驻相关</span>
+                        	<ul class="fl2">
+                            	<li><a href="#">入驻标准</a></li>
+                            	<li><a href="#">商家入驻流程</a></li>
+                                <li><a href="#">丽子保证金制度</a></li>
+                        	</ul>
+                   		</li>
+                    
+                    	<li class="fl"><span>店铺管理</span>
+                    		<ul class="fl2">
+                        		<li><a href="#">子账号权限管理</a></li>
+                            	<li><a href="#">商品分类管理</a></li>
+                            	<li><a href="#">店铺基本设置</a></li>
+                            	
+                        	</ul>
+                    	</li>
+                    	<li class="fl"><span>店铺装修</span>
+                    		<ul class="fl2">
+                        		<li><a href="#">店铺招牌</a></li>
+                            	<li><a href="#">维权类型</a></li>
+                            	<li><a href="#">轮播模块</a></li>
+                                <li><a href="#">拼图模块</a></li>
+                                <li><a href="#">自定义页面</a></li>
+                        	</ul>
+                    	</li>
+                    	<li class="fl"><span>商家客户服务</span>
+                    		<ul class="fl2">
+                        		<li><a href="#">48小时发货</a></li>
+                            	<li><a href="#">全站免运费</a></li> 
+                                <li><a href="#">中国人民保险公司正品保证</a></li>   
+                        	</ul>
+                   		</li>
+               		 </ul>
+                </div> 
+                <div class="help1right">
+                	<div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>入驻</h3>
+                            <p><a href="#">在接受本协议之前，请您仔细阅读本协议的全部内容。如果您对本协议的条款有疑问，请通过丽子平台客服渠道进行询问，我们将向您解释条款内容；如果您不同意本协议的任何内容</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>店铺保证金与技术服务费</h3>
+                            <p><a href="#">商家同意按本协议的要求向丽子交纳店铺保证金（以下简称“保证金”或“店铺保证金”），用于保证商家的合规经营。  </a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>产品陈列和订单</h3>
+                            <p><a href="#">1. 针对商家通过丽子网站陈列销售的每一件产品，商家将按丽子要求的格式提供准确、完整的必备产品信息，并在必要时及时更新以保证上述信息在任何时候均准确完整。</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>销售、配送和退换货</h3>
+                            <p><a href="#">1. 以商业上合理的方式包装商家的产品、并在四十八（48）小时内完成相关产品的发货，且物流信息可追踪；</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>消费者保障责任及处理</h3>
+                            <p><a href="#">1. 商家与买家通过丽子美妆平台的服务进行交易后，如因商家未履行对消费者的承诺义务而导致买家权益受损的情况下，丽子有权以普通或非专业人员的知识水平标准，根据相关证据材料和规则判定商家是否应根据本协议、</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>密码与账户安全</h3>
+                            <p><a href="#">商家设置的密码仅可于本协议有效期内用于访问丽子（或丽子提供的其他工具）以使用丽子提供的服务，包括但不限于商品的管理、用电子方式接受用户的交易、浏览已完成的</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                    <div class="rightcon">
+                    	<div class="conleft">
+                        	<h3>保密义务</h3>
+                            <p><a href="#">1. 在商家使用服务的过程中，商家可能收到有关丽子或其服务的不为公众所知悉的信息，包括但不限于相关的交易信息（“保密信息”）。商家同意：</a></p>
+                        </div>
+                        <div class="conright">
+                        	<button>查看详情</button>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	$(function(){
+		$(".mainlist li").click(function(){
+			$(this).css("background","url(../images/line3.png) no-repeat center bottom").css("color","red").siblings().css("background","#dbf6fd").css("color","#000");
+		var index = $(this).index();
+		
+		$(".mainhelp .help").eq(index).css("display","block").siblings().css("display","none");
+		
+	})
+	
+$(function(){
+		$(".helpul ul").hide();
+		$(".helpul>li>span").click(function(){
+			$(this).next("ul").slideToggle("fast");
+		})
+	})
+
+		
+	})
+</script>
+</body>
+</html>

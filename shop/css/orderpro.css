@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------------------------------logo-------------------------------------*/
+.logo{width:100%;height:80px;background:#fff;border-bottom:1px solid #ccc;}
+.logo .logocon{width:1090px;height:60px;margin:0 auto;padding-top:20px;}
+/*------------------------------orderbox-------------------------------------*/
+.orderbox{width:100%;background:#EEE;}
+.orderbox .boxcon{width:940px;padding:0 10px 30px;background:#fff;margin:0 auto;}
+/*------------------------------CA-------------------------------------*/
+.CA{width:940px;height: 110px;}
+.CAleft{width:116px;height:110px;background:url(../images/shopping/shopping-head.jpg) no-repeat;float:left;background-position: 0px 20px;}
+.CAright{width:583px;height: 90px;float: right;padding-top:20px;}
+.CAright span{display: block;float: left;font-size: 13px;text-align:left;}
+.CAright span em{display: block;margin-top:25px;}
+.CAright  .examine{width:239px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -164px 10px;}
+.CAright  .indent{width:244px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -404px -44px;}
+.CAright  .affirm{width:64px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -635px 10px;}
+/*------------------------------inform-------------------------------------*/
+.boxcon .inform{width:898px;height:500px;background:#fffeed;border:1px solid #ccc;padding:0 20px;}
+.boxcon .inform p{height:50px;width:898px;border-bottom:1px dashed #ccc;line-height:50px;font-size:16px;font-weight:900;}
+.inform .infocon{width:778px;padding-left:38px;padding-right:80px;height:423px;}
+.infocon .infotop{width:778px;height:32px;padding-top:22px;}
+.infocon .info1{width:746px;border:1px solid #ccc;background:#f9f9f9;padding:10px 16px 0;height:292px;}
+.infocon .info1 .info11{width:726px;height:187px;border-bottom:1px dashed #ccc;padding-left:20px;}
+.info1 .info11 input{border:0;border:1px solid #ccc;}
+.info1 .info11 .username{width:90px;height:22px;margin-bottom:10px;}
+.info1 .info11 .phone1{width:120px;height:22px;margin-bottom:10px;}
+.info1 .info11 em{font-style:normal;color:#bbb;margin-right:10px;}
+.info1 .info11 .telephone1{width:44px;height:22px;}
+.info1 .info11 .telephone2{width:112px;height:22px;}
+.info1 .info11 .telephone3{width:64px;height:22px;}
+.info11 .select1{height:24px;margin-bottom:10px;}
+.info11 .street1{width:292px;height:22px;margin-bottom:10px;margin-left:65px;}
+.info11 .code1{width:80px;height:22px;}
+.infocon .songhuo{width:726px;padding-left:20px;padding-top:20px;}
+.songhuo .sh{width:64px;height:70px;float:left;}
+.songhuo .shcon{width:660px;float:left;height:65px;}
+.checkpro{width:116px;height:30px;background:#444;border:1px solid #000;margin-top:20px;line-height:30px;text-align:center;}
+.checkpro a{color:#fff;}
+/*------------------------------zhifu-------------------------------------*/
+.boxcon .zhifu{width:900px;height: 150px;border:1px solid #ccc;margin-top:20px;padding:0 20px;}
+.boxcon .zhifu .p1{width:900px;height:50px;line-height:50px;font-size:14px;border-bottom:1px dashed #ccc;font-weight:900;}
+.boxcon .zhifu .p1 a{font-size:12px;color:#e5004f;}
+.boxcon .zhifu .p2{margin-top:20px;margin-bottom:10px;}
+.boxcon .zhifu .p2 span{color:#e5004f}
+.boxcon .zhifu h3{width:20px;height:28px;float:left;padding-top:10px;}
+.boxcon .zhifu h4{width:138px;height:38px;float:left;border:1px solid #ccc;}
+/*------------------------------tijiao-------------------------------------*/
+.boxcon .tijiao{width:900px;height:193px;border:1px solid #ccc;margin-top:20px;padding:0 20px;}
+.tijiao .tj1{height:113px;width:860px;border-bottom:1px solid #ccc;text-align:right;padding-right:40px;padding-top:10px;line-height:24px;}
+.tijiao .tj1 span{color:#e40150}
+.tijiao .tj2{height:55px;width:900px;padding-top:15px;}
+.tijiao .tj2 h2{width:92px;height:28px;line-height:28px;text-align:center;float:left;font-weight:100;border:1px solid #ccc;background:#fcfcfc;font-size:12px;color:#000;}
+.tijiao .tj2 h3{width:142px;height:40px;float:right;}

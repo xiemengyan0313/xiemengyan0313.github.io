@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#f7f7f7;}
+/*----------------------------saixuan-----------------------------------*/
+.saixuan{width:100%;background:#f7f7f7;}
+.saixun .sx{width:1088px;margin:20px auto;height:330px;border:1px solid #ccc;background:#fff;}
+.sx p{height:45px;border-bottom:1px solid #ccc;width:1074px;font-size:14px;line-height:45px;padding-left:14px;}
+.sx p span{color:#ed145a;}
+.sx h1{width:90px;background:#fbfbfb;float:left;font-size:12px;text-align:center;}
+.sx .sx1{width:1088px;height:82px;border-bottom:1px solid #ccc;}
+.sx1 h1{height:82px;line-height:82px;}
+.sx1 .sxcon1{width:986px;float:left;height:72px;padding-left:12px;padding-top:10px;}
+.sx .sx2{width:1088px;height:60px;border-bottom:1px solid #ccc;}
+.sx2 h1{height:60px;line-height:60px;}
+.sx2 .sxcon2{width:986px;float:left;height:50px;padding-left:12px;padding-top:10px;}
+.sx .sx3{width:1088px;height:78px;border-bottom:1px solid #ccc;}
+.sx3 h1{height:78px;line-height:78px;}
+.sx3 .sxcon3{width:986px;float:left;height:68px;padding-left:12px;padding-top:10px;}
+.sx .sx4{width:1088px;height:60px;}
+.sx4 h1{height:60px;line-height:60px;}
+.sx4 .sxcon4{width:986px;float:left;height:50px;padding-left:12px;padding-top:10px;}
+.sx ul li{float:left;width:87px;height:35px;line-height:35px;}
+.sx ul li a{float:left;color:#000;}
+.sx ul li a:hover{color:#F0C;}
+/*----------------------------shangpin-----------------------------------*/
+.shangpin{width:100%;background:#f7f7f7;}
+.shangpin .sp{width:1088px;margin:20px auto;border:1px solid #ccc;background:#fff;}
+.sp .spnav{width:1088px;height:32px;}
+.sp .spnav ul li{float:left;height:32px;width:88px;border-right:1px solid #bbb;text-align:center;line-height:32px;background:url(../images/line2.jpg)}
+.sp .spnav ul .li1{background:#fff;color:#F06;}
+.sp .spcon{width:1088px;height:2052px;}
+.sp .spcon dl{width:250px;height:320px;float:left;margin:10px 10px;border:1px solid #ccc;}
+.sp .spcon dt img{display:inline;}
+.sp .spcon dt{text-align:center;}
+.sp .spcon dd{padding-left:15px;}
+.sp .spcon dd p span{color:#ed145a}
+.sp .spcon dd h3{height:24px;line-height:24px;font-size:18px;color:#ed145a;margin:10px 0}
+.sp .spcon dd .btn{width:235px;height:50px;}
+.sp .spcon dd .btn h4{width:90px;height:30px;background:#f32468;line-height:30px;text-align:center;float:left;}
+.sp .spcon dd .btn h4 a{color:#fff;font-size:12px;}
+.sp .spcon dd .btn h5{width:90px;height:30px;background:#f9f9f9;line-height:30px;text-align:center;float:left;margin-left:20px;}
+.sp .spcon dd .btn h5 a{font-size:12px;color:#000;}
+
+.shangpin .fenye{width:1088px;height:60px;padding-top:20px;}
+.fenye ul{width:518px;float:right}
+.fenye ul li{float:left;width:28px;height:28px;margin:0 5px;border:1px solid #ccc;line-height:28px;text-align:center;}
+.fenye ul .li2{width:58px;}
+.fenye ul .li3{border:0;}
+.fenye ul .li4{background:#6d6d6d;color:#fff}

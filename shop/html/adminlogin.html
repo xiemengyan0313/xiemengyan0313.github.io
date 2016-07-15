@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>管理员登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/login-register.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+</head>
+<body>
+<!--****************************top1*****************************-->
+<div class="top1">
+    <div class="top1con">
+        <div class="top1left">
+            <a href="index.html"><img src="../images/logo.jpg"/></a>
+        </div>
+        <div class="top1right">
+            <a href="#"><img src="../images/shangbiao1.jpg"/></a>
+            <a href="#"><img src="../images/shangbiao2.jpg"/></a>
+            <a href="#"><img src="../images/shangbiao3.jpg"/></a>
+        </div>
+    </div>
+</div>
+<!--****************************mid*****************************-->
+<div class="mid">
+    <div class="midcon">
+        <div class="midleft"><img src="../images/adminlogin.jpg"/></div>
+        <div class="midright">
+            <div class="rightcon">
+                <form>
+                    <h2>管理员登录|<a href="login.html">用户登录</a></h2>
+                    <p class="p1"><span></span><a href="register.html"></a></p>
+                    账号：<input class="m1" type="text" value="用户名" onfocus="test()" id="username"/>
+                    密码：<input class="m2" type="password" id="pwd"/>
+                    <input class="m3" type="button" value="登录" onclick="denglu()"/>
+                    <p class="p2">使用第三方账号登录</p>
+                    <a href="#"><img src="../images/tb1.png"/></a>
+                    <a href="#"><img src="../images/tb2.png"/></a>
+                    <a href="#"><img src="../images/tb3.png"/></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+        <div class="footerleft">
+            <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+            <p>服务时间：09:00-23:00 客服热线：8888888</p>
+            <ul>
+                <li><img src="../images/t1.png"/></li>
+                <li><img src="../images/t2.png"/></li>
+                <li><img src="../images/t3.png"/></li>
+            </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<script>
+function test(){
+	document.getElementById("username").value="";
+}
+function denglu(){
+	var username=document.getElementById("username").value;
+	var pwd=document.getElementById("pwd").value;
+	if(username=="xmy"&&pwd==1234){
+		location.href="adminorder.html";
+	}
+	else{
+		alert("用户名或密码错误");
+	}
+	
+}
+</script>
+</body>
+</html>

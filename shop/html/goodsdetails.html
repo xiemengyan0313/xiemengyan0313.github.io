@@ -1,0 +1,537 @@
+<!DOCTYPE >
+<html>
+<head>
+<meta charset="utf-8" />
+<title>丽子商品详情页</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/goodsdetails.css"/>
+<link type="text/css" rel="stylesheet" href="../css/icon/iconfont.css"/>
+<script type="text/javascript" src="../js/index.js"/></script>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../js/goods.js"/></script>
+<script>
+$(function(){
+		$(".fenlei1 ul").hide();
+		$(".fenlei1>li>span").click(function(){
+			$(this).next("ul").slideToggle("fast");
+		})
+});
+</script>
+</head>
+<body onLoad="startimg() ">
+<!--************************右侧导航栏***************************-->
+<!--************************右侧导航栏***************************-->
+<div class="rightbar">
+    <div class="kong"></div>
+    <div class="barphoto">
+        <i class="iconfont icon-8"></i>
+
+    </div>
+    <div class="barshopcart">
+        <i class="iconfont icon-gouwuche"></i>
+        <P><a href="shopcart.html">购</a></P>
+        <P><a href="#">物</a></P>
+        <P><a href="#">车</a></P>
+    </div>
+    <div class="bartrack">
+        <a href="track.html"><i class="iconfont icon-iconfontzuji"></i></a>
+    </div>
+    <div class="erweima">
+        <i class="iconfont icon-erweima"></i>
+        <div class="ewm">
+            <img src="../images/weixin.jpg"/>
+        </div>
+    </div>
+
+</div>
+<!--************************header***************************-->
+<div class="header">
+    <div class="headercon">
+        <div class="headerleft">
+        	<p>欢迎来到丽子美妆!</p>
+            <a class="a1" href="login.html">登录</a>
+            <a class="a2" href="register.html">注册</a> 
+        </div>
+        <div class="headerright">
+       	
+            <ul>
+            <li class="bt1">
+            	<a href="#">更多</a>
+                <div>
+                 <ul>
+                 	<li><a href="#">邀请好友</a></li>
+                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">丽子微信</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="koubei.html">口碑</a></li>
+            <li><a href="helpcenter.html">帮助中心</a></li>
+            <li class="bt2">
+            	<a href="#">我的丽子</a>
+                <div>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的现金券</a></li>
+                        <li><a href="#">我的红包</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">会员中心</a></li>
+                     </ul>
+                </div>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--************************serach***************************-->
+<div class="search">
+    <div class="searchcon"> 
+    <div class="logo">
+    	<a href="index.html"><img src="../images/logo.jpg"/></a>
+    </div>
+    <div class="searchleft">
+        <form>
+            <input class="btn1" id="selectvalue" type="text" value="请输入商品或品牌" onclick="showvalue()"/>
+            <input class="btn2" type="submit" value="搜索"/>
+        </form>
+        <ul class="list2" id="list"><li >保湿面膜</li><li >美白洗面奶</li><li >补水美白护肤套装</li><li >隔离霜</li><li >奢侈美妆</li><li >个人护理</li></ul>
+        <ul class="list1">
+        <li><a href="#">保湿</a></li>
+        <li><a href="#">面膜</a></li>
+        <li><a href="#">洗面奶</a></li>
+        <li><a href="#">补水</a></li>
+        <li><a href="#">香水</a></li>
+        <li class="bt3"><a href="#">护肤套装</a></li>
+        </ul>  
+    </div>
+     <div class="searchright">
+     <a href="#"><img src="../images/shopcar.jpg"/></a>
+     </div>
+    </div>
+</div>
+<!--************************nav***************************-->
+<div class="nav">
+    <div class="navcon">
+        <ul>
+            <li class="n1">全部商品分类
+            	<div class="navleft">
+        		<h1>全部商品</h1>
+            	<ul>
+              	 <li>
+                    <h4><a href="#">推荐品牌</a></h4>
+                    <p>
+                        <a href="#">倩碧</a>
+                        <a href="#">菲诗小铺</a>
+                        <a href="#">相宜本草</a>
+                        <a href="#">韩束</a>
+                        <a href="#">雅思兰黛</a>
+                        <a href="#">佰草集</a>
+                        <a href="#">韩后</a>
+                        <a href="#">兰蔻</a>
+                    </p>
+                    <div>
+                      <h3>国际品牌</h3> 
+                           <a href="#">伊丽莎白雅顿</a>
+                           <a href="#">兰蔻</a>
+                           <a href="#">科颜氏</a>
+                           <a href="#">贝玲妃</a>
+                           <a href="#"> 倩碧 </a>
+                           <a href="#">娇韵诗</a>
+                           <a href="#">雪肌精</a>
+                      <h3>欧美品牌</h3>      
+                            <a href="#"> 玫琳凯</a>
+                            <a href="#">兰蔻</a>
+                            <a href="#">美宝莲</a>
+                            <a href="#">妮维雅 </a>
+                            <a href="#"> 思妍丽</a>
+                            <a href="#">娇韵诗</a>
+                            <a href="#">玉兰油 </a>
+                            <a href="#">倩碧</a>
+                    </div> 
+              </li>          
+            <li>
+                <h4><a href="#">护肤</a></h4>
+                <p>
+                    <a href="#">洁面</a>
+                    <a href="#">补水</a>
+                    <a href="#">化妆水</a>
+                    <a href="#">精华</a>
+                    <a href="#">眼霜</a>
+                    <a href="#">面膜</a>
+                    <a href="#">护肤套装</a>
+                </p>
+                <div>
+  
+                      <h3>日常护肤</h3> 
+                           <a href="#">水洗面膜</a>
+                           <a href="#">洁面摩丝</a>
+                           <a href="#">洁面乳</a>
+                           <a href="#">免洗面膜 </a>
+                           <a href="#">柔肤水 </a>
+                           <a href="#">精华水 </a>
+                           <a href="#">喷雾</a>    
+                           <a href="#"> 面部去角质/磨砂</a>
+                           <a href="#">洁肤皂 </a>
+                           <a href="#">撕拉面膜</a>
+                           <a href="#">收敛水/紧肤水 </a>
+                           <a href="#">洁面啫哩/胶 </a>
+                    </div> 
+            </li>
+            <li>
+                <h4><a href="#">彩妆</a></h4>
+                <p>
+                    <a href="#">卸妆</a>
+                    <a href="#">防晒</a>
+                    <a href="#">BB霜</a>
+                    <a href="#">眼影</a>
+                    <a href="#">眼贴</a>
+                    <a href="#">唇彩</a>
+                    <a href="#">眼妆</a>
+                    <a href="#">彩妆套装</a>
+                </p>
+                <div class="xiezhuang">
+                   <h3>卸妆</h3> 
+                           <a href="#">卸妆油</a>
+                           <a href="#">卸妆液</a>
+                           <a href="#">卸妆霜</a>
+                           <a href="#">卸妆乳 </a>
+                           <a href="#"> 眼唇卸妆 </a>
+                      <h3>隔离</h3>      
+                            <a href="#"> 隔离乳/霜</a>
+                            <a href="#">防晒隔离</a>
+                            <a href="#">隔离乳/霜 </a>
+                      <h3>底妆</h3>      
+                            <a href="#"> 粉底霜 </a>
+                            <a href="#">粉饼</a>
+                            <a href="#">妆前乳/露</a>
+                            <a href="#"> 蜜粉/散粉 </a>
+                            <a href="#">BB霜/cc霜</a>
+                    </div> 
+            </li>
+            <li>
+                <h4><a href="#">个人护理</a></h4>
+                <p>
+                    <a href="#">洗发</a>
+                    <a href="#">护发</a>
+                    <a href="#">润肤乳</a>
+                    <a href="#">牙膏</a>
+                    <a href="#">脱毛</a>
+                    <a href="#">沐浴</a>
+                    <a href="#">发膜</a>
+                    <a href="#">护理套装</a>
+                </p>
+                <div>
+                      <h3>沐浴/润肤</h3> 
+                           <a href="#">沐浴露</a>
+                           <a href="#">香皂</a>
+                           <a href="#">润肤乳</a>
+                           <a href="#">沐浴套装</a>
+                           <a href="#"> 润肤霜 </a>
+                           <a href="#">身体去角质/磨砂</a>
+                      <h3>体膜/按摩霜</h3>      
+                            <a href="#"> 洗发/护发</a>
+                            <a href="#">洗发皂</a>
+                            <a href="#">洗发水</a>
+                            <a href="#">发膜 </a>
+                            <a href="#"> 干洗喷雾</a>
+                            <a href="#">护发素</a>
+                            <a href="#"> 护发精华</a>
+                    </div> 
+            </li>
+            <li class="nan">
+                <h4><a href="#">男士专区</a></h4>
+                <p>
+                    <a href="#">洁面</a>
+                    <a href="#">爽肤水</a>
+                    <a href="#">乳液</a>
+                    <a href="#">面霜</a>
+                    <a href="#">精华</a>
+                    <a href="#">洗发</a>
+                    <a href="#">沐浴</a>
+                </p>
+                <div>
+                      <h3>男士护肤</h3> 
+                           <a href="#">洁面</a>
+                           <a href="#">面膜</a>
+                           <a href="#">防晒</a>
+                           <a href="#">面霜</a>
+                           <a href="#"> 乳液 </a>
+                           <a href="#">眼霜</a>
+                           <a href="#">爽肤水</a>
+                      <h3>男士洗护</h3>      
+                            <a href="#"> 洗发水</a>
+                            <a href="#">漱口水</a>
+                            <a href="#">沐浴</a>
+                            <a href="#">剃须用品 </a>
+                            <a href="#"> 身体护理</a>
+                    </div> 
+            </li>
+            
+        </div>
+            </li>
+            <li class="n2"><a href="index.html">首页</a></li>
+            <li class="n2 n3"><a href="index.html">个人护理</a></li>
+            <li class="n2"><a href="index.html">护肤</a></li>
+            <li class="n2"><a href="index.html">彩妆</a></li>
+            <li class="n2"><a href="index.html">奢品美妆</a></li>
+        </ul>
+    </div>
+</div>
+<!--************************goods***************************-->
+<div class="goods">
+    <div class="goodscon">
+    	<h1>相宜本草花香花开拾忆限量精粹装25g*10片</h1>
+        <div class="goodsleft">
+        	<div class="left1">
+            	<div id="drag"></div>
+            	<ul>
+                    <li ><img src="../images/huakai1.jpg" /></li>
+                    <li><img src="../images/huakai2.jpg" /></li>
+                    <li><img src="../images/huakai3.jpg" /></li>
+                    <li><img src="../images/huakai4.jpg" /></li>
+                </ul>
+            </div>
+            <div id="ShowBigPictureBox">
+                    <img src="../images/huakai1.jpg" />
+                    <img src="../images/huakai2.jpg" />
+                    <img src="../images/huakai3.jpg" />
+                    <img src="../images/huakai4.jpg" />
+            </div>
+            <div class="left2">
+				<ul class="picUl">
+                    <li class="picUl_li1"><img src="../images/hk1.jpg" /></li>
+                    <li><img src="../images/hk2.jpg" alt="" /></li>
+                    <li><img src="../images/hk3.jpg" alt="" /></li>
+                    <li><img src="../images/hk4.jpg" alt="" /></li>
+				</ul>
+				
+            </div>
+        </div>
+        <div class="goodsright">
+        <em>￥118</em><i>丽子价</i>
+        <p><span>满赠</span><a href="#">相宜本草满128元送相宜本草睡莲体验套装</a></p>
+        <p class="koubei">口碑<img src="../images/star.jpg"/><strong>4.7分</strong></p>
+        <p>
+        <form>
+           数量 <i onClick="jian()" style="cursor:pointer">-</i>
+        	<input id="number" class="num" type="text" value="0"/>
+            <i onClick="jia()" style="cursor:pointer">+</i>
+        </form>
+        <a  href="shopcart.html"><img class="btn3" src="../images/add.png"/></a>
+        <a  href="#"><img class="btn3" src="../images/shoucang.jpg"/></a>
+        </p>
+        <ul>
+        	<li>防伪码</li>
+            <li>质量保证</li>
+            <li>官方授权</li>
+            <li>闪电发货</li>
+        </ul>
+        </div>
+    </div>
+</div>
+<!--************************detail***************************-->
+<div class="detail">
+    <div class="detailcon">
+    	<div class="detailleft">
+        	<div class="search">
+            	<h2>本店搜索</h2>
+                <form>
+                关键词<input class="txt" type="text"/>
+                <input class="btn" type="button" value="搜索"/>
+                </form>
+            </div>
+            <div class="fenlei">
+            	<h2>按分类</h2>
+                <ul class="fenlei1">
+                	<li class="fl"><span>面部护肤</span>
+                        <ul class="fl2">
+                            <li><a href="#">面膜</a></li>
+                            <li><a href="#">眼部护理</a></li>
+                            <li><a href="#">护肤套装</a></li>
+                            <li><a href="#">乳液</a></li>
+                            <li><a href="#">面霜</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="fl"><span>彩妆</span>
+                    	<ul class="fl2">
+                        	<li><a href="#">卸妆</a></li>
+                            <li><a href="#">隔离</a></li>
+                            <li><a href="#">防晒</a></li>
+                            <li><a href="#">底妆</a></li>
+                        </ul>
+                    </li>
+                    <li class="fl"><span>身体护理</span>
+                    	<ul class="fl2">
+                        	<li><a href="#">身体护理套装</a></li>
+                            <li><a href="#">手足护理</a></li>
+                            <li><a href="#">润肤</a></li>
+                        </ul>
+                    </li>
+                    <li class="fl"><span>男士护理</span>
+                    	<ul class="fl2">
+                        	<li><a href="#">男士护肤</a></li>
+                            <li><a href="#">男士套装</a></li>   
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="xilie">
+            	<h2>按系列</h2>
+                <ul>
+                	<li><img src="../images/tt1.jpg"/></li>
+                    <li><img src="../images/tt2.jpg"/></li>
+                    <li><img src="../images/tt3.jpg"/></li>
+                    <li><img src="../images/tt4.jpg"/></li>
+                    <li><img src="../images/tt5.jpg"/></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="detailright">
+        	<div class="detailnav1"></div>
+        	<ul id="detailnav2">
+            	<li><a href="#">商品参数</a></li>
+                <li><a href="#">商品详情</a></li>
+                <li><a href="#">商品实拍</a></li>
+                <li><a href="#">用户口碑</a></li>
+                <li><a href="#">为你推荐</a></li>
+            </ul>
+            <div class="zhiliang">
+            	<img src="../images/zhiliang.jpg"/>
+            </div>
+            <div class="accredit">
+            	<h3>品牌授权 <span>BRAND AUTHORIZATION</span></h3>
+                <img src="../images/bigimg1.jpg"/>
+                <img src="../images/bigimg2.jpg"/>
+            </div>
+            <div class="canshu">
+            	<h3>商品参数 <span>SPECS</span></h3>
+                <img src="../images/bigimg3.jpg"/>
+            </div>
+            <div class="xiangqing">
+            	<h3>商品详情<span>DETAILS</span></h3>
+                <img src="../images/bigimg4.jpg"/>
+            </div>
+            <div class="shipai">
+            	<h3>商品实拍<span>PHOTOS</span></h3>
+                <img src="../images/bigimg5.jpg"/>
+                <p>相宜本草花香花开拾忆限量精粹装25g*10片，肌肤一天比一天更绽放</p>
+                <img src="../images/bigimg6.jpg"/>
+                <p>沁润水养干燥角质层，持续提升肌肤含水量，肌肤呈现水嫩，柔软</p>
+                <img src="../images/bigimg7.jpg"/>
+                <p>盈盈水漾精华液，为肌肤注入丰沛水分，缓解干燥，紧绷</p>
+            </div>
+            <div class="koubei">
+            	<h3>用户口碑<span>COSTOMER REVIEWS</span></h3>
+                <img src="../images/bigimg8.jpg"/>
+            </div>
+            <div class="tuijian">
+            	<h3>为你推荐<span>RECOMMENDACTIONS</span></h3>
+                <img src="../images/bigimg9.jpg"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--****************************footertop*****************************-->
+<div class="footertop">
+    <div class="footertopcon">
+        <div class="footer1">
+            <dl>
+                <dt><img src="../images/tb4.png"/></dt>
+                <dd>值得信赖美妆电商</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb5.png"/></dt>
+                <dd>成功在美上市</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb6.png"/></dt>
+                <dd>品牌防伪码</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb7.png"/></dt>
+                <dd>30天无理由退货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb8.png"/></dt>
+                <dd>百万用户口碑</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb9.png"/></dt>
+                <dd>订单闪电发货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb10.png"/></dt>
+                <dd>大牌明星热荐</dd>
+            </dl>
+            
+        </div>
+        <div class="footer2">
+        	<ul>
+            <li class="links">服务保障</li>
+            <li><a href="#">100%正品保证</a></li>
+            <li><a href="#">30天无条件退货</a></li>
+            <li><a href="#">品牌真品防伪码</a></li>
+            <li><a href="#">24小时客服服务</a></li>
+            </ul>
+            <ul>
+            <li class="links">使用帮助</li>
+            <li><a href="#">新手指南</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">帮助中</a></li>
+            <li><a href="#">用户协议</a></li>
+            </ul>
+            <ul>
+            <li class="links">支付方式</li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">在线支付</a></li>
+            <li><a href="#">余额支付</a></li>
+            <li><a href="#">现金券支付</a></li>
+            </ul>
+            <ul>
+            <li class="links">配送方式</li>
+            <li><a href="#">配送说明</a></li>
+            <li><a href="#">运费说明</a></li>
+            <li><a href="#">包邮政策</a></li>
+            <li><a href="#">验货签收</a></li>
+            </ul>
+            <ul>
+            <li class="links">售后服务</li>
+            <li><a href="#">正品承诺</a></li>
+            <li><a href="#">售后咨询</a></li>
+            <li><a href="#">退货政策</a></li>
+            <li><a href="#">退货办理</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+    	<div class="footerleft">
+        <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+        <p>服务时间：09:00-23:00 客服热线：8888888</p>
+       <ul>
+           <li><img src="../images/t1.png"/></li>
+           <li><img src="../images/t2.png"/></li>
+           <li><img src="../images/t3.png"/></li>
+       </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+</body>
+</html>

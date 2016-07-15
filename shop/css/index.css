@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,img{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,li,ol{list-style:none;}
+img{display:block;border:0;}
+body{font-size:12px;font-family:"微软雅黑";}
+/*--------------------------------main--------------------------------*/
+.main{width:100%;height:435px;background:#f7f7f7;}
+.main .maincon{width:1090px;height:435px;margin:0 auto;background:#fff;}
+.maincon .mainleft{width:218px;float:left;}
+.maincon .mainleft h1{height:35px;width:208px;padding-left:10px;font-size:14px;line-height:35px;border-bottom:1px solid #ccc;}
+.maincon .mainleft ul{width:198px;}
+.maincon .mainleft li{position:relative;z-index:10;width:198px;text-align:left;padding:9px 10px;border-bottom:1px dashed #ccc;}
+.maincon .mainleft ul li div{position:absolute;top:1px;left:218px;bottom:1px;width:382px;border:1px solid #ccc;z-index:-9999;background:rgb(255,255,255);display:none;height:150px;padding-left:18px;}
+.maincon .mainleft ul li .xiezhuang{height:230px;}
+.maincon .mainleft ul li div h3{font-size:14px;line-height:36px;}
+.maincon .mainleft ul li div a{line-height:36px;}
+.maincon .mainleft li:hover{background:#FCF;}
+.maincon .mainleft li:hover div{display:block;}
+.maincon .mainleft ul li a{color:#333;padding-right:10px;}
+.maincon .mainleft ul li a:hover{color:#ed145b;}
+.maincon .mainleft li h4{font-size:14px;margin-bottom:6px;}
+.maincon .mainleft li h4 a{color:#333;}
+.maincon .mainleft .nan{border:0;} 
+.maincon .maincenter{width:654px;height:435px;float:left;position:relative;}
+
+
+.bannerbig{width:654px;height:435px;overflow:hidden;position:absolute;top:0;left:0;z-index:5}
+.bannerbig div{display: none;position:absolute;left:0;top:0;right:0;bottom:0;overflow: hidden;width:654px;height:435px;}
+.bannerbig .bannerImg1{display: block;}
+.bannerbig div img{width:654px;height:435px;}
+.bannerNum{position:absolute;left:260px;bottom:30px;width:92px;height:8px;z-index:6;background:#fff;}
+.bannerNum li{float:left;width:30px;height:8px;margin-right:1px;background:#211616;}
+.bannerNum .NumLast{margin-right:0;}
+.bannerNum .NumFirst{background:#e5004f;}
+
+.maincenter .LeftA{display:none;position:absolute;top:50%;margin-top:-60px;left:0;width:30px;height:60px;line-height:60px;font-size:33px;text-align:center;background:#424445;z-index:12;color:#fff;display: block;cursor: pointer;}
+.maincenter .LeftA:hover{background:#F06;}
+.maincenter .RightA{display:none;position: absolute;top:50%;margin-top:-60px;right:0;width:30px;height:60px;line-height:60px;font-size:33px;text-align:center;
+background:#424445;z-index:100;color:#fff;display: block;cursor: pointer;}
+.maincenter .RightA:hover{background:#F06;}
+
+.maincon .mainright{width:212px;height:435px;float:left;margin-left:6px;position:relative;}
+.mainright .dong1{position:absolute;top:0;left:0;}
+.mainright .dong2{position:absolute;top:145px;left:0;}
+.mainright .dong3{position:absolute;top:290px;left:0;}
+/*--------------------------------hotpro--------------------------------*/
+.hotpro{width:100%;background:#f7f7f7;}
+.hotpro .hotprocon{width:1090px;margin:0 auto;height:760px;background:#f7f7f7;}
+.hotprocon .hottop{width:1090px;height:60px;padding-top:20px;}
+.hotprocon .hottop h1{float:left;margin-right:750px;}
+.hottop .dc{border:0;width:30px;background:#f7f7f7;color:#cf3b3b;font-size:22px;}
+
+.hotprocon dl{width:240px;height:320px;float:left;margin-right:40px;border:1px solid #ccc;background:#fff;position:relative;margin-bottom:30px;}
+.hotprocon dl dt{text-align:center}
+.hotprocon .hot1{margin:0;}
+.hotprocon dl dt img{display:inline;}
+.hotprocon dl dd{padding-left:20px;}
+.hotprocon dl dd a{color:#34495e;}
+.hotprocon dl dd p{line-height:24px;}
+.hotprocon dl dd del{color:#666;margin-right:50px;}
+.hotprocon dl dd i{color:#F06;font-size:16px;}
+.topline{height:1px;background: #000000;position: absolute;left:-1px;top:-1px;}
+.leftline{width:1px;background: #000000;position: absolute;left:-1px;top:-1px;}
+.rightline{width:1px;background: #000000;position: absolute;bottom:-1px;right:-1px;}
+.bottomline{height:1px;background:#000000;position: absolute;right:-1px;bottom:-1px;}
+
+
+
+
+/*--------------------------------hotactive--------------------------------*/
+.hotactive{width:100%;background:#f7f7f7;}
+.hotactive .hotactivecon{width:1090px;margin:0 auto;height:1226px;background:#f7f7f7;}
+.hotactive .activetop{width:1090px;height:60px;padding-top:20px;}
+.activetop h2{font-size:20px;float:left;margin-right:700px;}
+.activetop .date{border:0;width:30px;background:#f7f7f7;color:#C0C;font-size:18px;}
+.hotactivecon dl{width:534px;height:360px;float:left;border:1px solid #ddd;margin-bottom:20px;background:#fff}
+.hotactivecon dt{height:250px;}
+.hotactivecon .active1{margin-right:18px;}
+.hotactivecon dd{height:80px;padding:30px 20px 0 20px;}
+.hotactivecon dd a{color:#333;font-size:18px;display:block;float:left;}
+.hotactivecon dd em{font-style:normal;color:#000;font-size:18px;display:block;float:right;}
+.hotactivecon dd em strong{font-weight:100;color:#ee145b;}
+.hotactivecon dd p{margin-top:40px;border-top:1px dashed #ccc;line-height:30px;font-size:14px;color:#bbb;text-align:center;}
+/*--------------------------------renqi--------------------------------*/
+.renqi{width:100%;background:#f7f7f7;}
+.renqi .renqicon{width:1090px;margin:0 auto;height:1246px;background:#f7f7f7;}
+.renqicon h2{width:1090px;height:60px;padding-top:20px;font-size:20px;float:left;}
+.renqicon dl{width:261px;height:360px;float:left;border:1px solid #ddd;margin-bottom:20px;background:#fff;margin-right:10px;}
+.renqicon .r1{margin-right:0;}
+.renqicon dl dt{width:261px;height:281px;text-align: center;}
+.renqicon dl dt img{display:inline;}
+.renqicon dl dd {padding-left:17px;}
+.renqicon dl dd p{font-size:14px;margin-top:10px;}
+.renqicon dl dd p a{color:#666;}
+.renqicon dl dd i{font-size:14px;color:#F06;margin-left:30px;margin-right:50px;}
+.renqicon dl dd em{background:url(../images/fire.png) no-repeat left center;padding-left:15px;}
+
+/*--------------------------------悬浮框--------------------------------*/
+.indexFixBox{position: fixed;left:15px;bottom:20px;width:40px;height: 300px; display:none;}
+.toTop{width:30px;height:30px;font-size: 13px;color:#000;line-height: 20px;padding:5px 10px 15px;overflow: hidden;border:1px solid #ccc }
+.toTop:hover{background: #E5004F;}
+.indexFix{width:40px;height:170px;}
+.indexFix li a{display:block;width:30px;height:30px;line-height: 20px;margin-bottom: 5px;padding:5px 10px 15px;overflow: hidden;z-index:999;font-size: 13px;color:#000;border:1px solid #ccc }
+.indexFix li a:hover{background: #E5004F;}

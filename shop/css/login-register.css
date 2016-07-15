@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,img{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,li,ol{list-style:none;}
+img{border:0;}
+body{font-size:12px;font-family:"微软雅黑";}
+/*---------------------------------top-------------------------------*/
+.top1{width:100%;background:#fff;}
+.top1con{width:1090px;height:70px;margin:0 auto;padding-top:30px;}
+.top1con .top1left{width:140px;height:70px;float:left;}
+.top1con .top1right{width:510px;height:70px;float:right;}
+.top1con .top1right img{display:inline;}
+
+/*---------------------------------mid-------------------------------*/
+.mid{width:100%;background:#fafafa;border-bottom:2px solid #ff666b;}
+.midcon{width:1090px;height:470px;margin:0 auto;padding-top:20px;}
+.midcon .midleft{width:502px;height:454px;float:left;}
+.midcon .midright{width:385px;height:454px;float:right;}
+.midright .rightcon{width:323px;border:1px solid #ccc;height:432px;padding:20px 30px 0 20px;}
+.midright .rightcon h2{font-size:18px;font-weight:100;float:left;width:190px;height:30px;color:#fd6866;}
+.midright .rightcon h2 a{color:#ccc;font-size:10px;}
+.midright .rightcon h2 a:hover{color:#F0C;text-decoration:underline;}
+.midright .rightcon .p1{float:right;width:133px;height:30px;margin-left:0}
+.midright .rightcon .p1 a{color:#F00;}
+.midright .rightcon .m1,.midright .rightcon .m2{border:0;width:288px;height:38px;border:1px solid #ccc;line-height:38px;margin:16px 0;padding-left:30px;color:#bbb;}
+.midright .rightcon .m1{background:url(../images/login1.png) no-repeat left center;}
+.midright .rightcon .m2{background:url(../images/login2.png) no-repeat left center;}
+.midright .rightcon .m3{border:0;width:323px;height:50px;background:#ff666b;color:#fff;line-height:50px;text-align:center;margin:20px 0;font-size:18px;}
+.midright .rightcon .p2{margin-bottom:20px;}
+.midright .rightcon img{display:inline;margin-right:20px;}
+.midright .rightcon .admin{margin-left:90px;color:#fd6866;font-size:14px;}
+/*---------------------------------register_mid-------------------------------*/
+.noreg{display:none;color:#F09;}
+.wrong{display:none;color:#F09;}
+.rightcon div{height:61px;width:323px;}
+.rightcon div p{margin-left:50px;color:#F09;}
+.rightcon div input{float:left;width:240px;height: 30px;border:0;border:1px solid #CCCCCC;}
+.rightcon div .yanzheng{width:70px;height:30px;}
+.rightcon div #checkcode{width:70px;height:30px;float:left;margin-left:10px;border:0;border:1px solid #CCCCCC;}
+
+.rightcon div span{width:60px;height:32px;text-align: right;line-height: 32px;font-size: 13px;color:#666666 ;display: block;float:left;margin-right:17px;}
+.rightcon .inputDiv #sp2{text-align:left;width:100px;height:30px;margin-left:60px;}
+.rightcon .checkB{float:left;}
+.rightcon .inputDiv .checkBox{width:11px;height: 11px;}
+.rightcon .inputDiv .buttonA{width:186px;height: 32px;line-height: 32px;text-align: center;color:#fff;font-size: 14px;font-weight: 900;background:#ff666b}
+.rightcon  .buttonB{width:186px;height: 32px;line-height: 32px;text-align: center;color:#fff;font-size: 14px;font-weight: 900;background:#e90453}
+.rightcon .buttnB{text-align: center;margin-left:70px;}

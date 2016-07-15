@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-------------------------------logo-------------------------------------*/
+.logo{width:100%;height:80px;background:#fff;border-bottom:1px solid #ccc;}
+.logo .logocon{width:1090px;height:60px;margin:0 auto;padding-top:20px;}
+/*-------------------------------checkbox-------------------------------------*/
+.checkbox{width:100%;background:#EEE;}
+.checkbox .boxcon{width:940px;padding:0 10px 30px;background:#fff;margin:0 auto;}
+.CA{width:940px;height: 110px;margin-bottom:75px;}
+.CAleft{width:116px;height:110px;background:url(../images/shopping/shopping-head.jpg) no-repeat;float:left;background-position: 0px 20px;}
+.CAright{width:583px;height: 90px;float: right;padding-top:20px;}
+.CAright span{display: block;float: left;font-size: 13px;text-align:left;}
+.CAright span em{display: block;margin-top:25px;}
+.CAright  .examine{width:239px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -164px 10px;}
+.CAright  .indent{width:244px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -404px 10px;}
+.CAright  .affirm{width:64px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -635px -44px;}
+.boxcon .zhifu{width:752px;height:300px;padding-left:188px;}
+.zhifu .dui{width:50px;height:60px;float:left;background:url(../images/shopping/shopping-head.jpg) no-repeat;background-position: -706px 0;}
+.zhifu .wenzi{width:682px;height:300px;float:left;margin-left:20px;}
+.wenzi .wenzi1{width:682px;height:142px;margin-bottom:30px;}
+.wenzi .wenzi1 h2{font-size:20px;height:50px;line-height:50px;}
+.wenzi .wenzi1 h4{margin-top:35px;color:#333;font-size:14px;}
+.wenzi .wenzi1 h4 span{color:#e5004f;font-size:24px;}
+.wenzi .wenzi2{width:682px;height:128px;}
+.wenzi .wenzi2 h3{width:116px;height:35px;text-align:center;line-height:35px;background:#fbf9fa;border:1px solid #ccc;font-weight:100;font-size:12px;float:left;}
+.wenzi .wenzi2 h3 a{color:#000;}
+.wenzi .wenzi2 h4{width:124px;height:36px;float:left;margin-left:80px;}

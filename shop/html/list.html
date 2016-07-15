@@ -1,0 +1,722 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>丽子商品</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/product.css"/>
+<link rel="stylesheet" type="text/css" href="../css/goodsdetails.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../js/index.js"/></script>
+
+</head>
+
+<body onload="startimg() ">
+<!--************************header***************************-->
+<div class="header">
+    <div class="headercon">
+        <div class="headerleft">
+        	<p>欢迎来到丽子美妆!</p>
+            <a class="a1" href="login.html">登录</a>
+            <a class="a2" href="register.html">注册</a> 
+        </div>
+        <div class="headerright">
+       	 <ul>
+            <li class="bt1">
+            	<a href="#">更多</a>
+                <div>
+                 <ul>
+                 	<li><a href="#">邀请好友</a></li>
+                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">丽子微信</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="koubei.html">口碑</a></li>
+            <li><a href="helpcenter.html">帮助中心</a></li>
+            <li class="bt2">
+            	<a href="#">我的丽子</a>
+                <div>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的现金券</a></li>
+                        <li><a href="#">我的红包</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">会员中心</a></li>
+                     </ul>
+                </div>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--************************serach***************************-->
+<div class="search">
+    <div class="searchcon">
+    <div class="logo">
+    	<a href="index.html"><img src="../images/logo.jpg"/></a>
+    </div>
+    <div class="searchleft">
+        <form>
+            <input class="btn1" id="selectvalue" type="text" value="请输入商品或品牌" onClick="showvalue()"/>
+            <input class="btn2" type="submit" value="搜索"/>
+        </form>
+        <ul class="list2" id="list"><li >保湿面膜</li><li >美白洗面奶</li><li >补水美白护肤套装</li><li >隔离霜</li><li >奢侈美妆</li><li >个人护理</li></ul>
+        <ul class="list1">
+        <li><a href="#">保湿</a></li>
+        <li><a href="#">面膜</a></li>
+        <li><a href="#">洗面奶</a></li>
+        <li><a href="#">补水</a></li>
+        <li><a href="#">香水</a></li>
+        <li class="bt3"><a href="#">护肤套装</a></li>
+        </ul>  
+    </div>
+     <div class="searchright">
+     <a href="#"><img src="../images/shopcar.jpg"/></a>
+     </div>
+    </div>
+</div>
+<!--************************nav***************************-->
+<div class="nav">
+    <div class="navcon">
+        <ul>
+            <li class="n1">全部商品分类
+            	<div class="navleft">
+        		<h1>全部商品</h1>
+            	<ul>
+              	 <li>
+                    <h4><a href="#">推荐品牌</a></h4>
+                    <p>
+                        <a href="#">倩碧</a>
+                        <a href="#">菲诗小铺</a>
+                        <a href="#">相宜本草</a>
+                        <a href="#">韩束</a>
+                        <a href="#">雅思兰黛</a>
+                        <a href="#">佰草集</a>
+                        <a href="#">韩后</a>
+                        <a href="#">兰蔻</a>
+                    </p>
+                    <div>
+                      <h3>国际品牌</h3> 
+                           <a href="#">伊丽莎白雅顿</a>
+                           <a href="#">兰蔻</a>
+                           <a href="#">科颜氏</a>
+                           <a href="#">贝玲妃</a>
+                           <a href="#"> 倩碧 </a>
+                           <a href="#">娇韵诗</a>
+                           <a href="#">雪肌精</a>
+                      <h3>欧美品牌</h3>      
+                            <a href="#"> 玫琳凯</a>
+                            <a href="#">兰蔻</a>
+                            <a href="#">美宝莲</a>
+                            <a href="#">妮维雅 </a>
+                            <a href="#"> 思妍丽</a>
+                            <a href="#">娇韵诗</a>
+                            <a href="#">玉兰油 </a>
+                            <a href="#">倩碧</a>
+                    </div> 
+              </li>          
+            <li>
+                <h4><a href="#">护肤</a></h4>
+                <p>
+                    <a href="#">洁面</a>
+                    <a href="#">补水</a>
+                    <a href="#">化妆水</a>
+                    <a href="#">精华</a>
+                    <a href="#">眼霜</a>
+                    <a href="#">面膜</a>
+                    <a href="#">护肤套装</a>
+                </p>
+                <div>
+  
+                      <h3>日常护肤</h3> 
+                           <a href="#">水洗面膜</a>
+                           <a href="#">洁面摩丝</a>
+                           <a href="#">洁面乳</a>
+                           <a href="#">免洗面膜 </a>
+                           <a href="#">柔肤水 </a>
+                           <a href="#">精华水 </a>
+                           <a href="#">喷雾</a>    
+                           <a href="#"> 面部去角质/磨砂</a>
+                           <a href="#">洁肤皂 </a>
+                           <a href="#">撕拉面膜</a>
+                           <a href="#">收敛水/紧肤水 </a>
+                           <a href="#">洁面啫哩/胶 </a>
+                    </div> 
+            </li>
+            <li>
+                <h4><a href="#">彩妆</a></h4>
+                <p>
+                    <a href="#">卸妆</a>
+                    <a href="#">防晒</a>
+                    <a href="#">BB霜</a>
+                    <a href="#">眼影</a>
+                    <a href="#">眼贴</a>
+                    <a href="#">唇彩</a>
+                    <a href="#">眼妆</a>
+                    <a href="#">彩妆套装</a>
+                </p>
+                <div class="xiezhuang">
+                   <h3>卸妆</h3> 
+                           <a href="#">卸妆油</a>
+                           <a href="#">卸妆液</a>
+                           <a href="#">卸妆霜</a>
+                           <a href="#">卸妆乳 </a>
+                           <a href="#"> 眼唇卸妆 </a>
+                      <h3>隔离</h3>      
+                            <a href="#"> 隔离乳/霜</a>
+                            <a href="#">防晒隔离</a>
+                            <a href="#">隔离乳/霜 </a>
+                      <h3>底妆</h3>      
+                            <a href="#"> 粉底霜 </a>
+                            <a href="#">粉饼</a>
+                            <a href="#">妆前乳/露</a>
+                            <a href="#"> 蜜粉/散粉 </a>
+                            <a href="#">BB霜/cc霜</a>
+                    </div> 
+            </li>
+            <li>
+                <h4><a href="#">个人护理</a></h4>
+                <p>
+                    <a href="list.html">香水</a>
+                    <a href="#">护发</a>
+                    <a href="#">润肤乳</a>
+                    <a href="#">牙膏</a>
+                    <a href="#">脱毛</a>
+                    <a href="#">沐浴</a>
+                    <a href="#">发膜</a>
+                    <a href="#">护理套装</a>
+                </p>
+                <div>
+                      <h3>沐浴/润肤</h3> 
+                           <a href="#">沐浴露</a>
+                           <a href="#">香皂</a>
+                           <a href="#">润肤乳</a>
+                           <a href="#">沐浴套装</a>
+                           <a href="#"> 润肤霜 </a>
+                           <a href="#">身体去角质/磨砂</a>
+                      <h3>体膜/按摩霜</h3>      
+                            <a href="#"> 洗发/护发</a>
+                            <a href="#">洗发皂</a>
+                            <a href="#">洗发水</a>
+                            <a href="#">发膜 </a>
+                            <a href="#"> 干洗喷雾</a>
+                            <a href="#">护发素</a>
+                            <a href="#"> 护发精华</a>
+                    </div> 
+            </li>
+            <li class="nan">
+                <h4><a href="#">男士专区</a></h4>
+                <p>
+                    <a href="#">洁面</a>
+                    <a href="#">爽肤水</a>
+                    <a href="#">乳液</a>
+                    <a href="#">面霜</a>
+                    <a href="#">精华</a>
+                    <a href="#">洗发</a>
+                    <a href="#">沐浴</a>
+                </p>
+                <div>
+                      <h3>男士护肤</h3> 
+                           <a href="#">洁面</a>
+                           <a href="#">面膜</a>
+                           <a href="#">防晒</a>
+                           <a href="#">面霜</a>
+                           <a href="#"> 乳液 </a>
+                           <a href="#">眼霜</a>
+                           <a href="#">爽肤水</a>
+                      <h3>男士洗护</h3>      
+                            <a href="#"> 洗发水</a>
+                            <a href="#">漱口水</a>
+                            <a href="#">沐浴</a>
+                            <a href="#">剃须用品 </a>
+                            <a href="#"> 身体护理</a>
+                    </div> 
+            </li>
+            
+        </div>
+            </li>
+            <li class="n2"><a href="index.html">首页</a></li>
+            <li class="n2"><a href="index.html">个人护理</a></li>
+            <li class="n2"><a href="index.html">护肤</a></li>
+            <li class="n2"><a href="index.html">彩妆</a></li>
+            <li class="n2"><a href="index.html">奢品美妆</a></li>
+        </ul>
+    </div>
+</div>
+<!--****************************saixuan*****************************-->
+<div class="saixun">
+	<div class="sx">
+        <p>在<span>女士香水中</span>筛选</p>
+        <div class="sx1">
+        	<h1>品牌:</h1>
+            <div class="sxcon1">
+            	<ul>
+                	<li><a href="">安娜苏</a></li>
+                    <li><a href="">宝格丽</a></li>
+                    <li><a href="">阿玛尼</a></li>
+                    <li><a href="">迪奥</a></li>
+                    <li><a href="">蔻依</a></li>
+                    <li><a href="">兰蔻</a></li>
+                    <li><a href="">普拉达</a></li>
+                    <li><a href="">博士</a></li>
+                    <li><a href="">浪凡</a></li>
+                    <li><a href="">范思哲</a></li>
+                    <li><a href="">雾仙浓</a></li>
+                    <li><a href="">菲拉格慕</a></li>
+                    <li><a href="">卡文克莱</a></li>
+                    <li><a href="">菲拉格慕</a></li>
+                    <li><a href="">范思哲</a></li>
+                    <li><a href="">菲拉格慕</a></li>
+                    <li><a href="">阿玛尼</a></li>
+                    <li><a href="">菲拉格慕</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sx2">
+        	<h1>分类:</h1>
+            <div class="sxcon2">
+            	<ul>
+                	<li>香水</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sx3">
+        	<h1>功效:</h1>
+            <div class="sxcon3" >
+            	<ul>
+                	<li><a href="#">香氛</a></li>
+                    <li><a href="#">持久</a></li>
+                    <li><a href="#">保湿</a></li>
+                    <li><a href="#">装扮</a></li>
+                    <li><a href="#">滋润</a></li>
+                    <li><a href="#">嫩肤</a></li>
+                    <li><a href="#">清洁</a></li>
+                    <li><a href="#">喷雾</a></li>
+                    <li><a href="#">润滑</a></li>
+                    <li><a href="#">修饰</a></li>
+                    <li><a href="#">男士</a></li>
+                    <li><a href="#">嫩肤</a></li>
+                    <li><a href="#">喷雾</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="sx4">
+        	<h1>价格:</h1>
+            <div class="sxcon4">
+            	<ul>
+                	<li>0-100元</li>
+                    <li>100-200元</li>
+                    <li>200-300元</li>
+                    <li>300-400元</li>
+                    <li>400-500元</li>
+                    <li>500-600元</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--****************************shangpin*****************************-->
+<div class="shangpin">
+	<div class="sp">
+    	<div class="spnav">
+            <ul>
+                <li>排序:</li>
+                <li>价格</li>
+                <li class="li1">销量</li>
+                <li>人气</li>
+                <li>上架时间</li>
+            </ul>
+        </div>
+        <div class="spcon">
+        	<dl>
+            	<dt><img src="../images/goods/tu1.jpg"/></dt>
+                <dd>
+                	<p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                    	<h4><a href="#">加入购物车</a></h4>
+                    	<h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu12.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu3.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu4.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu5.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu1.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu6.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu7.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu8.jpg"/></dt>
+               <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu12.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu9.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu3.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu10.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu4.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu6.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu12.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu11.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu12.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu4.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu13.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu5.jpg"/></dt>
+               <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu9.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu8.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+            	<dt><img src="../images/goods/tu11.jpg"/></dt>
+                <dd>
+                    <p><span>包邮/</span>伊丽莎白雅顿第五大道淡香水</p>
+                    <h3>￥399</h3>
+                    <div class="btn">
+                        <h4><a href="#">加入购物车</a></h4>
+                        <h5><a href="#">收藏</a></h5>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div class="fenye">
+        	<ul>
+            	<li class="li4">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li class="li3">...</li>
+                <li>24</li>
+                <li>25</li>
+                <li class="li2">下一页</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--****************************footertop*****************************-->
+<div class="footertop">
+    <div class="footertopcon">
+        <div class="footer1">
+            <dl>
+                <dt><img src="../images/tb4.png"/></dt>
+                <dd>值得信赖美妆电商</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb5.png"/></dt>
+                <dd>成功在美上市</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb6.png"/></dt>
+                <dd>品牌防伪码</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb7.png"/></dt>
+                <dd>30天无理由退货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb8.png"/></dt>
+                <dd>百万用户口碑</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb9.png"/></dt>
+                <dd>订单闪电发货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb10.png"/></dt>
+                <dd>大牌明星热荐</dd>
+            </dl>
+            
+        </div>
+        <div class="footer2">
+        	<ul>
+            <li class="links">服务保障</li>
+            <li><a href="#">100%正品保证</a></li>
+            <li><a href="#">30天无条件退货</a></li>
+            <li><a href="#">品牌真品防伪码</a></li>
+            <li><a href="#">24小时客服服务</a></li>
+            </ul>
+            <ul>
+            <li class="links">使用帮助</li>
+            <li><a href="#">新手指南</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">帮助中</a></li>
+            <li><a href="#">用户协议</a></li>
+            </ul>
+            <ul>
+            <li class="links">支付方式</li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">在线支付</a></li>
+            <li><a href="#">余额支付</a></li>
+            <li><a href="#">现金券支付</a></li>
+            </ul>
+            <ul>
+            <li class="links">配送方式</li>
+            <li><a href="#">配送说明</a></li>
+            <li><a href="#">运费说明</a></li>
+            <li><a href="#">包邮政策</a></li>
+            <li><a href="#">验货签收</a></li>
+            </ul>
+            <ul>
+            <li class="links">售后服务</li>
+            <li><a href="#">正品承诺</a></li>
+            <li><a href="#">售后咨询</a></li>
+            <li><a href="#">退货政策</a></li>
+            <li><a href="#">退货办理</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+    	<div class="footerleft">
+        <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+        <p>服务时间：09:00-23:00 客服热线：8888888</p>
+       <ul>
+           <li><img src="../images/t1.png"/></li>
+           <li><img src="../images/t2.png"/></li>
+           <li><img src="../images/t3.png"/></li>
+       </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

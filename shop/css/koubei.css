@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:url(../images/fense.png)}
+.lizilogo{width:100%;background:url(../images/bg1.jpg);}
+.logocon{width:1090px;height:64px;margin:0 auto;padding-top:20px;}
+.logocon .logo1{width:180px;height:64px;float:left;}
+.logocon .logo2{width:910px;height:64px;float:left;}
+
+
+.koubei{width:100%;}
+.koubei .koubeicon{width:1069px;margin:0 auto 20px;height:4850px;padding-left:30px;}
+.koubei .title{width:1099px;height:50px;font-size:30px;line-height:50px;}
+.box{padding:5px 10px;float:left;}
+.box_img{padding:5px;border:1px solid #ccc;border-radius:5px;}
+.box_img img{width:224px;height:auto;}
+
+.toTop{position:fixed;right:0;bottom:50px;display:none;width:30px;height:40px;background:url(../images/koubei/top1.png) no-repeat;}

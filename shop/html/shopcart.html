@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>丽子购物车</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/shopcart.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../js/shop.js"></script>
+</head>
+ 
+<body>
+<!--************************header***************************-->
+<div class="header">
+    <div class="headercon">
+        <div class="headerleft">
+        	<p>欢迎来到丽子美妆!</p>
+            <a class="a1" href="login.html">登录</a>
+            <a class="a2" href="register.html">注册</a> 
+        </div>
+        <div class="headerright">
+       	 <ul>
+            <li class="bt1">
+            	<a href="#">更多</a>
+                <div>
+                 <ul>
+                 	<li><a href="#">邀请好友</a></li>
+                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">丽子微信</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="koubei.html">口碑</a></li>
+            <li><a href="helpcenter.html">帮助中心</a></li>
+            <li class="bt2">
+            	<a href="#">我的丽子</a>
+                <div>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的现金券</a></li>
+                        <li><a href="#">我的红包</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">会员中心</a></li>
+                     </ul>
+                </div>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--****************************logo*****************************-->
+<div class="logo">
+	<div class="logocon">
+    	<a href="index.html"><img src="../images/logo.jpg"/></a>
+    </div>
+</div>
+<!--****************************shopbox*****************************-->
+<div class="shopbox">
+	<div class="shopcon">
+    	<div class="CA">
+			<div class="CAleft"></div>
+			<div class="CAright">
+				<span class="examine">查看购物袋<em>STEP 1</em></span>
+				<span class="indent">填写订单信息<em>STEP 2</em></span>
+				<span class="affirm">订单确认<em>STEP 3</em></span>
+			</div>
+		</div>
+        <div class="CB">
+			<li class="cher">
+				<input type="checkbox" class="check" id="chkAll" onclick="changeCheck()"/>
+				全选
+			</li>
+			<li class="chak">商品</li>
+			<li class="price">单价</li>
+			<li class="count">数量</li>
+			<li class="jifen">获得积分</li>
+			<li class="opa">操作</li>
+		</div>
+        <div class="CC">
+        	普通商品
+        </div>
+        <div class="CDbox">
+        	<div class="CD">
+            	<div class="CD1">
+                	<input class="check1" id="chk1" type="checkbox"/>
+                </div>
+                <div class="CD2">
+                	<a href="#"><img src="../images/shopping/hk1.jpg"/></a>
+                </div>
+                <div class="CD3">
+                	<p><a href="#">相宜本草花香花开拾忆限量精粹装25g*10片,盈盈水漾精华液，为肌肤注入丰沛水分</a></p>
+                    <p>型号：25g*10片</p>
+                </div>
+                <div class="CD4">
+                	<strong id="sumprice1">￥118</strong>
+                    <span>8折</span>
+                </div>
+                <div class="CD5">
+                	<span class="jian" style="cursor:pointer;" onclick="jian1()">-</span>
+                    <input type="text" value="1" class="num" id="num1"/>
+                    <span class="jia" style="cursor:pointer;" onclick="jia1()">+</span>
+
+                </div>
+                <div class="CD6">
+                	<span class="jifen" id="jifen1"></span>
+                </div>
+                <div class="CD7">
+                	<input class="dele" id="dele" type="button" value="加入收藏"/>
+                </div>
+            </div>
+            <div class="CD">
+            	<div class="CD1">
+                	<input class="check1" id="chk2" type="checkbox"/>
+                </div>
+                <div class="CD2">
+                	<a href="#"><img src="../images/shopping/hansu.jpg"/></a>
+                </div>
+                <div class="CD3">
+                	<p><a href="#">韩束 (KanS)明星单品MAMA限量礼盒，肌底补水，年轻补水</a></p>
+                    <p>型号：套装</p>
+                </div>
+                <div class="CD4">
+                	<strong id="sumprice2">￥348</strong>
+                    <span>7折</span>
+                </div>
+                <div class="CD5">
+                	<span class="jian" style="cursor: pointer;" onclick="jian2()">-</span>
+                    <input type="text" value="1" class="num" id="num2"/>
+                    <span class="jia" style="cursor: pointer;" onclick="jia2()">+</span>
+
+                </div>
+                <div class="CD6">
+                	<span class="jifen" id="jifen2"></span>
+                </div>
+                <div class="CD7">
+                	<input class="dele" id="dele" type="button" value="加入收藏"/>
+                </div>
+            </div>
+        	
+            <!--<div class="CD">
+            	<div class="CD1">
+                	<input class="check1" id="chk3" type="checkbox"/>
+                </div>
+                <div class="CD2">
+                	<a href="#"><img src="../images/shopping/ys.jpg"/></a>
+                </div>
+                <div class="CD3">
+                	<p><a href="#">植美村(ZMC) 蜡菊多效修护日夜眼霜 20ml*2</a></p>
+                    <p>型号：20ml*2 </p>
+                </div>
+                <div class="CD4">
+                	<strong id="sumprice3">￥99</strong>
+                    <span>7折</span>
+                </div>
+                <div class="CD5">
+                	<span class="jian" style="cursor: pointer;">-</span>
+                    <input type="text" value="1" class="num" id="num"/>
+                    <span class="jia" style="cursor: pointer;">+</span>
+
+                </div>
+                <div class="CD6">
+                	<span class="jifen">99</span>
+                </div>
+                <div class="CD7">
+                	<input class="dele" id="dele" type="button" value="删除商品"/>
+                </div>
+            </div>-->
+        </div>
+        <div class="CE">
+        	<div class="CEleft">
+            	<span>总金额</span><span id="Tosumprice"></span>
+            </div>
+            <div class="CEright">
+            	<h3><a href="index.html">继续购物</a></h3>
+            	<h3><a href="order.html">去结算</a></h3
+            ></div>
+        </div>
+        <div class="CF">
+                <ul class="tabnav">
+                    <li>购买了同样商品的顾客还购买了</li>
+                    <li>根据您的浏览为您推荐</li>
+                    <li>看了又看</li>
+                </ul>
+            	<div class="tab">
+                	<dl>
+                    	<dt><img src="../images/shopping/tu1.jpg"/></dt>
+                        <dd><p><a href="#">御泥坊玫瑰滋养矿物洁面乳100ml</a></p>
+                        <span>￥45.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu2.jpg"/></dt>
+                        <dd><p><a href="#">一叶子植物酵素·多效  </a></p>
+                         <span>￥68.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu3.jpg"/></dt>
+                        <dd><p><a href="#">相宜本草花开百合花补水沁润面膜</a></p>
+                        <span>￥65.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu4.png"/></dt>
+                        <dd><p><a href="#">雅诗兰黛弹性紧实眼霜5ml</a></p>
+                         <span>￥99.00</span>
+                        </dd> 
+                    </dl>
+                </div>
+                <div class="tab">
+                	<dl>
+                    	<dt><img src="../images/shopping/tu5.jpg"/></dt>
+                        <dd><p><a href="#">御泥坊玫瑰滋养矿物洁面乳100ml</a></p>
+                        <span>￥43.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu6.jpg"/></dt>
+                        <dd><p><a href="#">一叶子植物酵素·多效  </a></p>
+                         <span>￥76.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu7.png"/></dt>
+                        <dd><p><a href="#">相宜本草花开百合花补水沁润面膜</a></p>
+                        <span>￥23.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu8.jpg"/></dt>
+                        <dd><p><a href="#">雅诗兰黛弹性紧实眼霜5ml</a></p>
+                         <span>￥77.00</span>
+                        </dd> 
+                    </dl>
+                </div>
+                <div class="tab">
+               		 <dl>
+                    	<dt><img src="../images/shopping/tu2.jpg"/></dt>
+                        <dd><p><a href="#">御泥坊玫瑰滋养矿物洁面乳100ml</a></p>
+                        <span>￥82.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu5.jpg"/></dt>
+                        <dd><p><a href="#">一叶子植物酵素·多效  </a></p>
+                         <span>￥103.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu7.png"/></dt>
+                        <dd><p><a href="#">相宜本草花开百合花补水沁润面膜</a></p>
+                        <span>￥44.00</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                    	<dt><img src="../images/shopping/tu3.jpg"/></dt>
+                        <dd><p><a href="#">雅诗兰黛弹性紧实眼霜5ml</a></p>
+                         <span>￥99.00</span>
+                        </dd> 
+                    </dl>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!--****************************footertop*****************************-->
+<div class="footertop">
+    <div class="footertopcon">
+        <div class="footer1">
+            <dl>
+                <dt><img src="../images/tb4.png"/></dt>
+                <dd>值得信赖美妆电商</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb5.png"/></dt>
+                <dd>成功在美上市</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb6.png"/></dt>
+                <dd>品牌防伪码</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb7.png"/></dt>
+                <dd>30天无理由退货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb8.png"/></dt>
+                <dd>百万用户口碑</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb9.png"/></dt>
+                <dd>订单闪电发货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb10.png"/></dt>
+                <dd>大牌明星热荐</dd>
+            </dl>
+            
+        </div>
+        <div class="footer2">
+        	<ul>
+            <li class="links">服务保障</li>
+            <li><a href="#">100%正品保证</a></li>
+            <li><a href="#">30天无条件退货</a></li>
+            <li><a href="#">品牌真品防伪码</a></li>
+            <li><a href="#">24小时客服服务</a></li>
+            </ul>
+            <ul>
+            <li class="links">使用帮助</li>
+            <li><a href="#">新手指南</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">帮助中</a></li>
+            <li><a href="#">用户协议</a></li>
+            </ul>
+            <ul>
+            <li class="links">支付方式</li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">在线支付</a></li>
+            <li><a href="#">余额支付</a></li>
+            <li><a href="#">现金券支付</a></li>
+            </ul>
+            <ul>
+            <li class="links">配送方式</li>
+            <li><a href="#">配送说明</a></li>
+            <li><a href="#">运费说明</a></li>
+            <li><a href="#">包邮政策</a></li>
+            <li><a href="#">验货签收</a></li>
+            </ul>
+            <ul>
+            <li class="links">售后服务</li>
+            <li><a href="#">正品承诺</a></li>
+            <li><a href="#">售后咨询</a></li>
+            <li><a href="#">退货政策</a></li>
+            <li><a href="#">退货办理</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+    	<div class="footerleft">
+        <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+        <p>服务时间：09:00-23:00 客服热线：8888888</p>
+       <ul>
+           <li><img src="../images/t1.png"/></li>
+           <li><img src="../images/t2.png"/></li>
+           <li><img src="../images/t3.png"/></li>
+       </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<script>
+	$(function(){
+		var $li=$(".tabnav>li");
+		//alert($li.length);
+		var $div=$(".tab");
+		//alert($div.length);
+		$div.addClass("hide");
+		$div[0].className="show";
+		$li.addClass("normal");
+		$li[0].className="hover";
+		$li.mouseover(function(){
+		
+			var index=$(this).index();
+			$li.removeClass().addClass("normal");
+			$(this).removeClass().addClass("hover");
+			$div.removeClass().addClass("hide");
+			$div.eq(index).removeClass().addClass("show");
+			})
+	})
+</script>
+
+
+</body>
+</html>

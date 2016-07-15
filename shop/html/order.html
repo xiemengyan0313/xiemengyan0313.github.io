@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单信息页</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/orderpro.css"/>
+</head>
+
+<body>
+<!--************************header***************************-->
+<div class="header">
+    <div class="headercon">
+        <div class="headerleft">
+        	<p>欢迎来到丽子美妆!</p>
+            <a class="a1" href="login.html">登录</a>
+            <a class="a2" href="register.html">注册</a> 
+        </div>
+        <div class="headerright">
+       	 <ul>
+            <li class="bt1">
+            	<a href="#">更多</a>
+                <div>
+                 <ul>
+                 	<li><a href="#">邀请好友</a></li>
+                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">丽子微信</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="koubei.html">口碑</a></li>
+            <li><a href="helpcenter.html">帮助中心</a></li>
+            <li class="bt2">
+            	<a href="#">我的丽子</a>
+                <div>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的现金券</a></li>
+                        <li><a href="#">我的红包</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">会员中心</a></li>
+                     </ul>
+                </div>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--****************************logo*****************************-->
+<div class="logo">
+	<div class="logocon">
+    	<a href="index.html"><img src="../images/logo.jpg"/></a>
+    </div>
+</div>
+<!--****************************orderbox*****************************-->
+<div class="orderbox">
+	<div class="boxcon">
+    	<div class="CA">
+			<div class="CAleft"></div>
+			<div class="CAright">
+				<span class="examine">查看购物袋<em>STEP 1</em></span>
+				<span class="indent">填写订单信息<em>STEP 2</em></span>
+				<span class="affirm">订单确认<em>STEP 3</em></span>
+			</div>
+		</div>
+        <div class="inform">
+        	<p>收货地址</p>
+            <form>
+            	<div class="infocon">
+				   <div class="infotop">
+						<input type="radio" class="radio" />
+						使用新地址
+					</div>
+					<div class="info1">
+						<div class="info11">
+							<span class="yonghu" >收  货 人：</span>
+							<input type="text" class="username"  id="userName" name="userName"/>
+							<span class="yonghu1" id="userNameSpan">请填写收货人姓名</span><br>
+							<span class="phone">手　  &nbsp;机：</span>
+							<input type="text" class="phone1" id="Phone" name="Phone" />
+							<em>或者</em>固定电话：
+							<input type="text" class="telephone1" id="Telephone1"/>
+							<em class="em2">-</em>
+							<input type="text" class="telephone2" id="Telephone2"/>
+							<em class="em2">-</em>
+							<input type="text" class="telephone3" id="Telephone3"/>
+							<span class="phonespan" id="TelephoneSpan" >请您填写手机号码或固定号码</span>
+							<span class="adress">收货地址：</span>
+							<select name="" class="select1" id="city">
+								<option value="">请选择</option>
+							</select>
+							<select name="" class="select1" id="cityarea">
+								<option value="">请选择</option>
+							</select>
+							<select name="" class="select1" id="street">
+								<option value="">请选择</option>
+							</select><br>
+							 <input type="text" class="street1" name="street"/>
+							<span class="street2" id="streetSpan" >请您填写街道地址</span><br>
+							<span class="code">邮政编码：</span>
+							<input type="text" class="code1"  id="Zipcod"/>
+							<span class="code2" id="ZipcodSpan">请检测邮编是否正确！</span>					
+						</div>
+					   <div class="songhuo">
+					   		<div class="sh">送货时间：</div>
+					   		<div class="shcon">
+					   			 <div class="songhuo1"><input type="radio" name="radio"/><span>工作日送货</span>周一至周五，早上9:00至晚6:00</div>
+					   			 <div class="songhuo1"><input type="radio" name="radio" /><span>节假日送货</span>周六日及国家法定节假日</div>
+					   			 <div class="songhuo1"><input type="radio"  name="radio"/><span>任何时间送货</span></div>
+					   		</div>
+					   	</div>
+					</div>
+				     <div class="checkpro">
+					  		<a href="">确认收货信息</a>
+					 </div>
+                </div>
+            </form>
+        </div>
+        <div class="zhifu">
+        	<p class="p1">支付方式<a href="#">【修改】</a></p>
+        	<div class="zhifubao">
+            <p class="p2">您本次购物需支付<span>￥466.00</span>元</p>
+            <h3><input type="radio"/></h3><h4><img src="../images/shopping/zhifu.jpg"/></h4>
+            </div>
+        </div>
+        <div class="tijiao">
+        	<div class="tj1">
+                <p>商品总价￥565.00</p>
+                <p>节省金额0.00</p>
+                <p>运费0.00</p>
+            	<h3>需支付金额：<span>￥466.00</span></h3>
+            </div>
+            <div class="tj2">
+            	<h2 style="cursor:pointer">返回购物袋</h2>
+                <h3><a href="checkorder.html"><img src="../images/shopping/tijiao.jpg"/></a></h3>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--****************************footertop*****************************-->
+<div class="footertop">
+    <div class="footertopcon">
+        <div class="footer1">
+            <dl>
+                <dt><img src="../images/tb4.png"/></dt>
+                <dd>值得信赖美妆电商</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb5.png"/></dt>
+                <dd>成功在美上市</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb6.png"/></dt>
+                <dd>品牌防伪码</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb7.png"/></dt>
+                <dd>30天无理由退货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb8.png"/></dt>
+                <dd>百万用户口碑</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb9.png"/></dt>
+                <dd>订单闪电发货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb10.png"/></dt>
+                <dd>大牌明星热荐</dd>
+            </dl>
+            
+        </div>
+        <div class="footer2">
+        	<ul>
+            <li class="links">服务保障</li>
+            <li><a href="#">100%正品保证</a></li>
+            <li><a href="#">30天无条件退货</a></li>
+            <li><a href="#">品牌真品防伪码</a></li>
+            <li><a href="#">24小时客服服务</a></li>
+            </ul>
+            <ul>
+            <li class="links">使用帮助</li>
+            <li><a href="#">新手指南</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">帮助中</a></li>
+            <li><a href="#">用户协议</a></li>
+            </ul>
+            <ul>
+            <li class="links">支付方式</li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">在线支付</a></li>
+            <li><a href="#">余额支付</a></li>
+            <li><a href="#">现金券支付</a></li>
+            </ul>
+            <ul>
+            <li class="links">配送方式</li>
+            <li><a href="#">配送说明</a></li>
+            <li><a href="#">运费说明</a></li>
+            <li><a href="#">包邮政策</a></li>
+            <li><a href="#">验货签收</a></li>
+            </ul>
+            <ul>
+            <li class="links">售后服务</li>
+            <li><a href="#">正品承诺</a></li>
+            <li><a href="#">售后咨询</a></li>
+            <li><a href="#">退货政策</a></li>
+            <li><a href="#">退货办理</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+    	<div class="footerleft">
+        <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+        <p>服务时间：09:00-23:00 客服热线：8888888</p>
+       <ul>
+           <li><img src="../images/t1.png"/></li>
+           <li><img src="../images/t2.png"/></li>
+           <li><img src="../images/t3.png"/></li>
+       </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+</body>
+</html>

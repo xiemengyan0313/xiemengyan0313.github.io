@@ -1,0 +1,591 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人护理</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/goodsdetails.css"/>
+<link rel="stylesheet" type="text/css" href="../css/index1.css"/>
+<link type="text/css" rel="stylesheet" href="../css/icon/iconfont.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../js/index1.js"></script>
+</head>
+
+<body>
+ <!--------------------------------------左悬浮框----------------------->
+        <div class="indexFixBox" id="inderFixBox">
+            <ul class="indexFix">
+                <li><a href="#item1" class="indexFixli1 cur">品牌墙</a></li>
+                <li><a href="#item2" class="indexFixli2">洗发护发</a></li>
+                <li><a href="#item3" class="indexFixli3">身体清洁</a></li>
+                 <li><a href="#item4" class="indexFixli4">口腔护理</a></li>
+            </ul>
+            <div class="toTop">返回顶部</div>
+        </div>
+<!--************************右侧导航栏***************************-->
+<div class="rightbar">
+	<div class="kong"></div>
+	<div class="barphoto">
+         <i class="iconfont icon-8"></i>
+
+    </div>
+    <div class="barshopcart">
+        <i class="iconfont icon-gouwuche"></i>
+    <P><a href="shopcart.html">购</a></P>
+    <P><a href="#">物</a></P>
+    <P><a href="#">车</a></P>
+    </div>
+    <div class="bartrack">
+        <i class="iconfont icon-iconfontzuji"></i>
+    </div>
+    <div class="erweima">
+        <i class="iconfont icon-erweima"></i>
+    	<div class="ewm">
+        	<img src="../images/weixin.jpg"/>
+        </div>
+    </div>
+</div>
+<!--************************header***************************-->
+<div class="header">
+    <div class="headercon">
+        <div class="headerleft">
+        	<p>欢迎来到丽子美妆!</p>
+            <a class="a1" href="login.html">登录</a>
+            <a class="a2" href="register.html">注册</a> 
+        </div>
+        <div class="headerright">
+       	
+            <ul>
+            <li class="bt1">
+            	<a href="#">更多</a>
+                <div>
+                 <ul>
+                 	<li><a href="#">邀请好友</a></li>
+                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">丽子微信</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="koubei.html">口碑</a></li>
+            <li><a href="helpcenter.html">关注我们</a></li>
+            <li class="bt2">
+            	<a href="#">我的丽子</a>
+                <div>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的现金券</a></li>
+                        <li><a href="#">我的红包</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">会员中心</a></li>
+                     </ul>
+                </div>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--************************serach***************************-->
+<div class="search">
+    <div class="searchcon"> 
+    <div class="logo">
+    	<a href="index.html"><img src="../images/logo.jpg"/></a>
+    </div>
+    <div class="searchleft">
+        <form>
+            <input class="btn1" id="selectvalue" type="text" value="请输入商品或品牌" onclick="showvalue()"/>
+            <input class="btn2" type="submit" value="搜索"/>
+        </form>
+        <ul class="list2" id="list"><li >保湿面膜</li><li >美白洗面奶</li><li >补水美白护肤套装</li><li >隔离霜</li><li >奢侈美妆</li><li >个人护理</li></ul>
+        <ul class="list1">
+        <li><a href="#">保湿</a></li>
+        <li><a href="#">面膜</a></li>
+        <li><a href="#">洗面奶</a></li>
+        <li><a href="#">补水</a></li>
+        <li><a href="#">香水</a></li>
+        <li class="bt3"><a href="#">护肤套装</a></li>
+        </ul>  
+    </div>
+     <div class="searchright">
+     <a href="#"><img src="../images/shopcar.jpg"/></a>
+     </div>
+    </div>
+</div>
+<!--************************nav***************************-->
+<div class="nav">
+    <div class="navcon">
+        <ul>
+            <li class="n1">全部商品分类
+            	<div class="navleft">
+        		<h1>全部商品</h1>
+            	<ul>
+              	 <li>
+                    <h4><a href="#">推荐品牌</a></h4>
+                    <p>
+                        <a href="#">倩碧</a>
+                        <a href="#">菲诗小铺</a>
+                        <a href="#">相宜本草</a>
+                        <a href="#">韩束</a>
+                        <a href="#">雅思兰黛</a>
+                        <a href="#">佰草集</a>
+                        <a href="#">韩后</a>
+                        <a href="#">兰蔻</a>
+                    </p>
+                    <div>
+                      <h3>国际品牌</h3> 
+                           <a href="#">伊丽莎白雅顿</a>
+                           <a href="#">兰蔻</a>
+                           <a href="#">科颜氏</a>
+                           <a href="#">贝玲妃</a>
+                           <a href="#"> 倩碧 </a>
+                           <a href="#">娇韵诗</a>
+                           <a href="#">雪肌精</a>
+                      <h3>欧美品牌</h3>      
+                            <a href="#"> 玫琳凯</a>
+                            <a href="#">兰蔻</a>
+                            <a href="#">美宝莲</a>
+                            <a href="#">妮维雅 </a>
+                            <a href="#"> 思妍丽</a>
+                            <a href="#">娇韵诗</a>
+                            <a href="#">玉兰油 </a>
+                            <a href="#">倩碧</a>
+                    </div> 
+              </li>          
+            <li>
+                <h4><a href="#">护肤</a></h4>
+                <p>
+                    <a href="#">洁面</a>
+                    <a href="#">补水</a>
+                    <a href="#">化妆水</a>
+                    <a href="#">精华</a>
+                    <a href="#">眼霜</a>
+                    <a href="#">面膜</a>
+                    <a href="#">护肤套装</a>
+                </p>
+                <div>
+  
+                      <h3>日常护肤</h3> 
+                           <a href="#">水洗面膜</a>
+                           <a href="#">洁面摩丝</a>
+                           <a href="#">洁面乳</a>
+                           <a href="#">免洗面膜 </a>
+                           <a href="#">柔肤水 </a>
+                           <a href="#">精华水 </a>
+                           <a href="#">喷雾</a>    
+                           <a href="#"> 面部去角质/磨砂</a>
+                           <a href="#">洁肤皂 </a>
+                           <a href="#">撕拉面膜</a>
+                           <a href="#">收敛水/紧肤水 </a>
+                           <a href="#">洁面啫哩/胶 </a>
+                    </div> 
+            </li>
+            <li>
+                <h4><a href="#">彩妆</a></h4>
+                <p>
+                    <a href="#">卸妆</a>
+                    <a href="#">防晒</a>
+                    <a href="#">BB霜</a>
+                    <a href="#">眼影</a>
+                    <a href="#">眼贴</a>
+                    <a href="#">唇彩</a>
+                    <a href="#">眼妆</a>
+                    <a href="#">彩妆套装</a>
+                </p>
+                <div class="xiezhuang">
+                   <h3>卸妆</h3> 
+                           <a href="#">卸妆油</a>
+                           <a href="#">卸妆液</a>
+                           <a href="#">卸妆霜</a>
+                           <a href="#">卸妆乳 </a>
+                           <a href="#"> 眼唇卸妆 </a>
+                      <h3>隔离</h3>      
+                            <a href="#"> 隔离乳/霜</a>
+                            <a href="#">防晒隔离</a>
+                            <a href="#">隔离乳/霜 </a>
+                      <h3>底妆</h3>      
+                            <a href="#"> 粉底霜 </a>
+                            <a href="#">粉饼</a>
+                            <a href="#">妆前乳/露</a>
+                            <a href="#"> 蜜粉/散粉 </a>
+                            <a href="#">BB霜/cc霜</a>
+                    </div> 
+            </li>
+            <li>
+                <h4><a href="#">个人护理</a></h4>
+                <p>
+                    <a href="#">洗发</a>
+                    <a href="#">护发</a>
+                    <a href="#">润肤乳</a>
+                    <a href="#">牙膏</a>
+                    <a href="#">脱毛</a>
+                    <a href="#">沐浴</a>
+                    <a href="#">发膜</a>
+                    <a href="#">护理套装</a>
+                </p>
+                <div>
+                      <h3>沐浴/润肤</h3> 
+                           <a href="#">沐浴露</a>
+                           <a href="#">香皂</a>
+                           <a href="#">润肤乳</a>
+                           <a href="#">沐浴套装</a>
+                           <a href="#"> 润肤霜 </a>
+                           <a href="#">身体去角质/磨砂</a>
+                      <h3>体膜/按摩霜</h3>      
+                            <a href="#"> 洗发/护发</a>
+                            <a href="#">洗发皂</a>
+                            <a href="#">洗发水</a>
+                            <a href="#">发膜 </a>
+                            <a href="#"> 干洗喷雾</a>
+                            <a href="#">护发素</a>
+                            <a href="#"> 护发精华</a>
+                    </div> 
+            </li>
+            <li class="nan">
+                <h4><a href="#">男士专区</a></h4>
+                <p>
+                    <a href="#">洁面</a>
+                    <a href="#">爽肤水</a>
+                    <a href="#">乳液</a>
+                    <a href="#">面霜</a>
+                    <a href="#">精华</a>
+                    <a href="#">洗发</a>
+                    <a href="#">沐浴</a>
+                </p>
+                <div>
+                      <h3>男士护肤</h3> 
+                           <a href="#">洁面</a>
+                           <a href="#">面膜</a>
+                           <a href="#">防晒</a>
+                           <a href="#">面霜</a>
+                           <a href="#"> 乳液 </a>
+                           <a href="#">眼霜</a>
+                           <a href="#">爽肤水</a>
+                      <h3>男士洗护</h3>      
+                            <a href="#"> 洗发水</a>
+                            <a href="#">漱口水</a>
+                            <a href="#">沐浴</a>
+                            <a href="#">剃须用品 </a>
+                            <a href="#"> 身体护理</a>
+                    </div> 
+            </li>
+            
+        </div>
+            </li>
+            <li class="n2"><a href="index.html">首页</a></li>
+            <li class="n2 n3"><a href="index.html">个人护理</a></li>
+            <li class="n2"><a href="index.html">护肤</a></li>
+            <li class="n2"><a href="index.html">彩妆</a></li>
+            <li class="n2"><a href="index.html">奢品美妆</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--************************banner***************************-->
+<div class="banner">
+	<div class="bannerbig">
+		<div class="bannerImg1" ><img src="../images/lunbo1.jpg" /></div>
+		<div><img src="../images/lunbo2.jpg" /></div>
+	</div>
+	<ul class="bannerNum">
+		<li class="NumFirst"></li>
+		<li class="NumLast"></li>
+	</ul>
+</div>
+<!--************************main**************************-->	
+<div class="main">
+	<div class="maincon">
+    	<div class="wall">
+        	<div class="walltop">
+            	<img src="../images/wall.jpg"/>
+            </div>
+            <div class="wallleft">
+            	<ul>
+                	<li><a href=""><img src="../images/w1.jpg"/></a></li>
+                    <li><a href=""><img src="../images/w2.jpg"/></a></li>
+                    <li><a href=""><img src="../images/w3.jpg"/></a></li>
+                    <li><a href=""><img src="../images/w4.jpg"/></a></li>
+                </ul>
+            </div>
+            <div class="wallright">
+            	<ul class="tabnav">
+                	<li>商超洗护</li>
+                    <li>沐浴润体</li>
+                    <li>女性护理</li>
+                </ul>
+                <div class="tab">
+                	<ul class="tabul">
+                    	<li><img src="../images/ws1.jpg"/></li>
+                        <li><img src="../images/ws2.jpg"/></li>
+                       	<li><img src="../images/ws1.jpg"/></li>
+                        <li class="noborder"><img src="../images/ws4.jpg"/></li>
+                        <li><img src="../images/ws3.jpg"/></li>
+                        <li><img src="../images/ws1.jpg"/></li>
+                       	<li><img src="../images/ws2.jpg"/></li>
+                        <li class="noborder"><img src="../images/ws4.jpg"/></li>
+                        <li class="nobottom"><img src="../images/ws1.jpg"/></li>
+                        <li class="nobottom"><img src="../images/ws3.jpg"/></li>
+                       	<li class="nobottom"><img src="../images/ws1.jpg"/></li>
+                        <li class="noborder nobottom"><img src="../images/ws2.jpg"/></li>
+                    </ul>
+                </div>
+                <div class="tab">
+                	<ul class="tabul">
+                    	<li><img src="../images/ws5.jpg"/></li>
+                        <li><img src="../images/ws8.jpg"/></li>
+                       	<li><img src="../images/ws6.jpg"/></li>
+                        <li class="noborder"><img src="../images/ws5.jpg"/></li>
+                        <li><img src="../images/ws7.jpg"/></li>
+                        <li><img src="../images/ws6.jpg"/></li>
+                       	<li><img src="../images/ws5.jpg"/></li>
+                        <li class="noborder"><img src="../images/ws7.jpg"/></li>
+                        <li class="nobottom"><img src="../images/ws8.jpg"/></li>
+                        <li class="nobottom"><img src="../images/ws5.jpg"/></li>
+                       	<li class="nobottom"><img src="../images/ws8.jpg"/></li>
+                        <li class="noborder nobottom"><img src="../images/ws6.jpg"/></li>
+                    </ul>
+                </div>
+                <div class="tab">
+                	<ul class="tabul">
+                    	<li><img src="../images/ws10.jpg"/></li>
+                        <li><img src="../images/ws12.jpg"/></li>
+                       	<li><img src="../images/ws11.jpg"/></li>
+                        <li class="noborder"><img src="../images/ws9.jpg"/></li>
+                        <li><img src="../images/ws12.jpg"/></li>
+                        <li><img src="../images/ws10.jpg"/></li>
+                       	<li><img src="../images/ws11.jpg"/></li>
+                        <li class="noborder"><img src="../images/ws9.jpg"/></li>
+                        <li class="nobottom"><img src="../images/ws12.jpg"/></li>
+                        <li class="nobottom"><img src="../images/ws10.jpg"/></li>
+                       	<li class="nobottom"><img src="../images/ws11.jpg"/></li>
+                        <li class="noborder nobottom"><img src="../images/ws9.jpg"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="care">
+        	<div class="caretop">
+            	<img src="../images/care.jpg"/>
+            </div>
+            <div class="careleft">
+            	<img src="../images/care1.jpg"/>
+            </div>
+            <div class="careright">
+            	<ul class="tabnav1">
+                	<li>洗发</li>
+                    <li>护发</li>
+                </ul>
+                <div class="tab1">
+                	<ul class="tabul1">
+                    	<li><img src="../images/c1.jpg"/></li>
+                        <li><img src="../images/c2.jpg"/></li>
+                       	<li><img src="../images/c3.jpg"/></li>
+                        <li><img src="../images/c2.jpg"/></li>
+                        <li><img src="../images/c3.jpg"/></li>
+                        <li><img src="../images/c1.jpg"/></li>
+                       	<li><img src="../images/c2.jpg"/></li>
+                        <li><img src="../images/c1.jpg"/></li>
+                        <li><img src="../images/c3.jpg"/></li>
+                        <li><img src="../images/c1.jpg"/></li>
+      
+                    </ul>
+                </div>
+                <div class="tab1">
+                	<ul class="tabul1">
+                    	<li><img src="../images/c5.jpg"/></li>
+                        <li><img src="../images/c4.jpg"/></li>
+                       	<li><img src="../images/c6.jpg"/></li>
+                        <li><img src="../images/c4.jpg"/></li>
+                        <li><img src="../images/c6.jpg"/></li>
+                        <li><img src="../images/c5.jpg"/></li>
+                       	<li><img src="../images/c6.jpg"/></li>
+                        <li><img src="../images/c4.jpg"/></li>
+                        <li><img src="../images/c5.jpg"/></li>
+                        <li><img src="../images/c6.jpg"/></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <div class="care">
+        	<div class="caretop">
+            	<img src="../images/body.jpg"/>
+            </div>
+            <div class="careleft">
+            	<img src="../images/body1.jpg"/>
+            </div>
+            <div class="careright">
+            	<ul class="tabnav2">
+                	<li>沐浴</li>
+                   
+                </ul>
+                <div class="tab2">
+                	<ul class="tabul2">
+                    	<li><img src="../images/b1.jpg"/></li>
+                        <li><img src="../images/b2.jpg"/></li>
+                       	<li><img src="../images/b3.jpg"/></li>
+                        <li><img src="../images/b4.jpg"/></li>
+                        <li><img src="../images/b1.jpg"/></li>
+                        <li><img src="../images/b4.jpg"/></li>
+                       	<li><img src="../images/b2.jpg"/></li>
+                        <li><img src="../images/b3.jpg"/></li>
+                        <li><img src="../images/b1.jpg"/></li>
+                        <li><img src="../images/b4.jpg"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="care">
+        	<div class="caretop">
+            	<img src="../images/oral.jpg"/>
+            </div>
+            <div class="careleft">
+            	<img src="../images/oral1.jpg"/>
+            </div>
+            <div class="careright">
+            	<ul class="tabnav3">
+                	<li>牙刷</li>
+                    
+                </ul>
+                <div class="tab3">
+                	<ul class="tabul3">
+                    	<li><img src="../images/oral2.jpg"/></li>
+                        <li><img src="../images/oral2.jpg"/></li>
+                       	<li><img src="../images/oral2.jpg"/></li>
+                        <li><img src="../images/oral2.jpg"/></li>
+                        <li><img src="../images/oral2.jpg"/></li>
+                        <li><img src="../images/oral2.jpg"/></li>
+                       	<li><img src="../images/oral2.jpg"/></li>
+                        <li><img src="../images/oral2.jpg"/></li>
+                        <li><img src="../images/oral2.jpg"/></li>
+                        <li><img src="../images/oral2.jpg"/></li>
+      
+                    </ul>
+                </div>
+               
+               
+            </div>
+        </div>
+       
+    </div>
+</div>
+<!--****************************footertop*****************************-->
+<div class="footertop">
+    <div class="footertopcon">
+        <div class="footer1">
+            <dl>
+                <dt><img src="../images/tb4.png"/></dt>
+                <dd>值得信赖美妆电商</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb5.png"/></dt>
+                <dd>成功在美上市</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb6.png"/></dt>
+                <dd>品牌防伪码</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb7.png"/></dt>
+                <dd>30天无理由退货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb8.png"/></dt>
+                <dd>百万用户口碑</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb9.png"/></dt>
+                <dd>订单闪电发货</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/tb10.png"/></dt>
+                <dd>大牌明星热荐</dd>
+            </dl>
+            
+        </div>
+        <div class="footer2">
+        	<ul>
+            <li class="links">服务保障</li>
+            <li><a href="#">100%正品保证</a></li>
+            <li><a href="#">30天无条件退货</a></li>
+            <li><a href="#">品牌真品防伪码</a></li>
+            <li><a href="#">24小时客服服务</a></li>
+            </ul>
+            <ul>
+            <li class="links">使用帮助</li>
+            <li><a href="#">新手指南</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">帮助中</a></li>
+            <li><a href="#">用户协议</a></li>
+            </ul>
+            <ul>
+            <li class="links">支付方式</li>
+            <li><a href="#">货到付款</a></li>
+            <li><a href="#">在线支付</a></li>
+            <li><a href="#">余额支付</a></li>
+            <li><a href="#">现金券支付</a></li>
+            </ul>
+            <ul>
+            <li class="links">配送方式</li>
+            <li><a href="#">配送说明</a></li>
+            <li><a href="#">运费说明</a></li>
+            <li><a href="#">包邮政策</a></li>
+            <li><a href="#">验货签收</a></li>
+            </ul>
+            <ul>
+            <li class="links">售后服务</li>
+            <li><a href="#">正品承诺</a></li>
+            <li><a href="#">售后咨询</a></li>
+            <li><a href="#">退货政策</a></li>
+            <li><a href="#">退货办理</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+    	<div class="footerleft">
+        <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+        <p>服务时间：09:00-23:00 客服热线：8888888</p>
+       <ul>
+           <li><img src="../images/t1.png"/></li>
+           <li><img src="../images/t2.png"/></li>
+           <li><img src="../images/t3.png"/></li>
+       </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+		
+		var $li=$(".tabnav1>li");
+		var $div=$(".tab1");
+		
+		$div.addClass("hide");
+		$div[0].className="show1";
+		$li.addClass("normal");
+		$li[0].className="hover";
+		$li.mouseover(function(){
+		
+			var index=$(this).index();
+			$li.removeClass().addClass("normal");
+			$(this).removeClass().addClass("hover");
+			$div.removeClass().addClass("hide");
+			$div.eq(index).removeClass().addClass("show1");
+			})
+})
+</script>
+</body>
+</html>

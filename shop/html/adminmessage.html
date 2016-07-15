@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>留言回复</title>
+<link rel="stylesheet" type="text/css" href="../css/adminorder.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<script type="text/javascript" src="../js/message.js"/></script>
+</head>
+
+<body>
+<!--************************header***************************-->
+<div class="header">
+    <div class="headercon">
+        <div class="headerleft">
+        	<p>欢迎来到丽子美妆后台管理!</p>
+            <a class="a1" href="login.html">登录</a>
+            <a class="a2" href="register.html">注册</a> 
+        </div>
+        <div class="headerright">
+       	 
+            <ul>
+            <li class="bt1">
+            	<a href="#">更多</a>
+                <div>
+                 <ul>
+                 	<li><a href="#">邀请好友</a></li>
+                    <li><a href="#">加入收藏</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">丽子微信</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                 </ul>
+                </div>
+            </li>
+            <li><a href="koubei.html">口碑</a></li>
+            <li><a href="helpcenter.html">帮助中心</a></li>
+            <li class="bt2">
+            	<a href="#">我的丽子</a>
+                <div>
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">我的现金券</a></li>
+                        <li><a href="#">我的红包</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">会员中心</a></li>
+                     </ul>
+                </div>
+            </li>
+            <li><a href="#">订单查询</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--************************main***************************-->
+<div class="main">
+	<div class="maincon">
+    	<div class="mainleft">
+        	<dl>
+            	<dt>商品管理</dt>
+                <dd><a href="adminorder.html">查看订单状态</a></dd>
+                <dd><a href="">查看用户留言</a></dd>
+            </dl>  
+        </div>
+        <div class="mainright" style="height:400px">
+        	<div id="content">
+		 		<table id="userInfo" width="500px" border="1" cellspacing="0"><tr>
+				 	<td><a href="#">风轻云淡:</a>本店的商品效果挺好的！！！</td>
+				 </tr>
+		 </table>  
+		</div>	
+	<form id="f">
+	<input type="button" id="bt" value="回复" onclick="send()"/>
+	</form>
+	<div id="bigbox">
+		<div id="smallbox">
+			<form>
+				<p id="title">留言回复</P>
+				用户名:<input id="userName" type="text" value="管理员"/><br>
+				内容:<textarea id="getTxt" onkeyDown="show(this,event)"></textarea>
+	<br><p id="p1">亲，您还能输入<span id="spanNum">150</span>个字;<p>
+				<input type="button" id="btn1" value="确定" onclick="sure1()"/>
+				<input type="button" id="btn2" value="取消" onclick="quxiao()"/>
+			</form>
+		</div>
+	</div>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+    	<div class="footerleft">
+        <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+        <p>服务时间：09:00-23:00 客服热线：8888888</p>
+       <ul>
+           <li><img src="../images/t1.png"/></li>
+           <li><img src="../images/t2.png"/></li>
+           <li><img src="../images/t3.png"/></li>
+       </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.my{width:100%;background:#e3feff;}
+.my .mycon{width:1090px;height:auto;overflow:hidden;margin:0 auto;padding-bottom:20px;}
+.mycon .myleft{width:90px;height:400px;float:left;background:#ddd;padding-left:10px;}
+.myleft h4{font-size:14px;margin-bottom:10px;height:30px;line-height:30px;margin-top:10px;}
+.myleft ul li{line-height:28px;}
+.myleft ul li a:hover{color:#F09;}
+.myleft ul .ord a{color:#f09;}
+.mycon .myright{width:955px;height:auto;overflow:hidden;float:left;background:#fff;margin-left:20px;padding-left:15px;padding-top:20px;}
+
+.CB{width:938px;height: 30px;background: #bbb;border:1px solid #DFDFDF;}
+.CB li{float: left;height: 30px;color:#fff;line-height: 30px;text-align:left;font-weight:900;}
+.CB .cher{width:103px;padding-left:27px;}
+.CB .chak{width:370px;}
+.CB .price{width:148px;}
+.CB .count{width:106px;}
+.CB .jifen{width:94px;}
+.CB .opa{width:90px;}
+
+.CDbox{width:940px;height:100%;}
+.CD{width:940px;height:88px;border-bottom: 1px solid #E2E2E2;background: #F9F9F9;margin-bottom:30px;}
+.CD1,.CD4,.CD5,.CD6,.CD7{height: 58px;float:left;padding-top:30px;}
+.CD .CD1{width:46px;}
+.CD .CD2{width:62px;height:73px;float:left;padding-top:15px;padding-left:26px;}
+.CD .CD2 a{display: block;width:60px;height: 60px;border:1px solid #ccc;}
+.CD .CD3{width:300px;height:68px;float:left;font-size: 11px;padding-top:20px;margin-left:10px;}
+.CD .CD3 p{color:#666;}
+.CD .CD3 p a{color:#000;}
+.CD .CD3 p a:hover{color:#F06;text-decoration:underline;}
+.CD .CD4{width:131px;margin-left:20px;}
+.CD .CD4 strong{width:45px;height:17px;color:#E5004F;line-height: 17px;text-align:center;display:block;float:left;}
+.CD .CD4 span{display: block;width:56px;height:17px;float:left;background:url(../images/shopping/shopping-icon.png) no-repeat;
+background-position: 0px -176px;text-align: center;color:font-size:10px;line-height:17px;color:#fff;}
+.CD .CD5{width:125px;text-align:center;}
+
+.CD .CD6{width:74px;padding-left:35px;}
+.CD .CD6 a{color:#ccc;font-size:10px;}
+.CD .CD6 a:hover{color:#F0C;}
+.CD .CD7{width:88px;}
+.CD .CD7 .dele{border:0;}

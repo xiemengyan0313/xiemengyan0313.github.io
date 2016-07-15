@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+.nav .navcon ul .n1{background:#000;color:#fff;}
+.nav .navcon ul .n1:hover{background:#ed145b;}
+.nav .navcon ul .n3{background:#ed145b;}
+/*--------------------------------banner--------------------------------*/
+.banner{width:100%;height: 351px;position:relative;}
+.bannerbig{width:100%;height: 351px;overflow:hidden;position: absolute;top:0;left:0;}
+.bannerbig div{display: none;position:absolute;left:0;top:0;right:0;bottom:0;overflow: hidden;width:100%;height: 351px;z-index:-999}
+.bannerbig .bannerImg1{display: block;}
+.bannerbig div img{width:100%;height:351px;}
+
+.bannerNum{position:absolute;left:608px;bottom:20px;width:70px;height:8px;z-index:10;background:#fff;}
+.bannerNum li{float:left;width:30px;height:8px;margin-right:1px;background:#211616;}
+.bannerNum .NumFirst{background:#e5004f;}
+/*--------------------------------main-------------------------------*/
+.main{width:100%;background:#e3feff;}
+.main .maincon{width:1090px;height:auto;overflow:hidden;margin:0 auto;}
+.maincon .wall{width:1070px;height:445px;background:#fff;margin-top:20px;padding:0 10px;}
+.maincon .wall .walltop{height:56px;width:1070px;border-bottom:1px solid #d6f3f9;}
+.wall .wallleft{height:326px;width:620px;float:left;padding-top:10px;}
+.wall .wallleft ul li{width:300px;height:150px;float:left;margin-right:10px;margin-bottom:10px;}
+.wall .wallright{height:326px;width:440px;float:left;padding-top:10px;padding-left:10px;overflow:hidden;}
+.tabnav{width:440px;margin-bottom:30px;}
+.tabnav li{float:left;height:27px;line-height:27px;width:90px;text-align:center;}
+
+.wallright .tabul li{width:108px;height:88px;float:left;border-right:1px solid #ccc;border-bottom:1px solid #ccc;}
+.wallright .tabul li img{width:108px;height:88px;}
+.wallright .tabul .noborder{border-right:0;}
+.wallright .tabul .nobottom{border-bottom:0;}
+
+.hide{display:none;}
+.show{display:block;width:438px;height:267px;margin-top:40px;border:1px solid #ccc;}
+.show1{display:block;width:750px;height:410px;margin-top:40px;}
+.normal{color:black;}
+.hover {font-weight:900;background:#4bc9eb;color:#fff;}
+
+.maincon .care{width:1070px;height:540px;background:#fff;margin-top:20px;padding:0 10px;}
+.maincon .care .caretop{height:56px;width:1070px;border-bottom:1px solid #d6f3f9;}
+.care .careleft{height:410px;width:300px;float:left;padding-top:10px;margin-right:20px;}
+.care .careright{height:410px;width:750px;float:left;padding-top:10px;overflow:hidden;}
+.tabnav1,.tabnav2,.tabnav3,.tabnav4{margin-bottom:30px;}
+.tabnav1 li,.tabnav2 li,.tabnav3 li,.tabnav4 li{float:left;height:27px;line-height:27px;width:90px;text-align:center;}
+.tabul1 li,.tabul2 li,.tabul3 li,.tabul4 li{width:150px;height:170px;float:left;margin-bottom:20px;}
+.tabul1 li img,.tabul2 li img,.tabul3 li img,.tabul4 li img{width:150px;height:170px;}
+
+/*--------------------------------悬浮框--------------------------------*/
+.indexFixBox{position: fixed;left:15px;bottom:20px;width:40px;height: 300px; display:none;}
+.toTop{width:30px;height:30px;font-size: 13px;color:#000;line-height: 20px;padding:5px 10px 15px;overflow: hidden;border:1px solid #ccc }
+.toTop:hover{background: #E5004F;}
+.indexFix{width:40px;height:230px;}
+.indexFix li a{display:block;width:30px;height:30px;line-height: 20px;margin-bottom: 5px;padding:5px 10px 15px;overflow: hidden;z-index:999;font-size: 13px;color:#000;border:1px solid #ccc }
+.indexFix li a:hover{background: #E5004F;}

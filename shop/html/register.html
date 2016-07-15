@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>丽子注册</title>
+<link rel="stylesheet" type="text/css" href="../css/login-register.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="../js/register.js"/></script>
+</head>
+<body onload="getCheckCode()">
+<!--****************************top1*****************************-->
+<div class="top1">
+    <div class="top1con">
+        <div class="top1left">
+        <a href="index.html"><img src="../images/logo.jpg"/></a>
+        </div>
+        <div class="top1right">
+        <a href="#"><img src="../images/shangbiao1.jpg"/></a>
+        <a href="#"><img src="../images/shangbiao2.jpg"/></a>
+        <a href="#"><img src="../images/shangbiao3.jpg"/></a>
+        </div>
+    </div>
+</div>
+<!--****************************mid*****************************-->
+<div class="mid">
+    <div class="midcon">
+        <div class="midleft"><img src="../images/register.jpg"/></div>
+        <div class="midright">
+        	<div class="rightcon">
+                <div>
+                	<h2>注册</h2>
+                    <p class="p1"><span>已有账号</span><a href="login.html">在此登录</a></p>
+                 </div>
+                <form>
+                
+                    <div class="inputDiv">
+                        <span>手机号</span>
+                        <input type="text" value="" name="username" class="zhanghao" id="username" onblur="Tel()"/>
+                        <p class="Pname1">请输入您的手机号</p>
+                    </div>
+                    <div class="inputDiv">
+                        <span>登录密码</span>
+                        <input type="password" name="password" class="pass" id="pwd"/>
+                        <p class="Pname2">6-16个字符,可使用字母、数字、符号任意组合</p>
+                    </div>
+                    <div  class="inputDiv">
+                        <span>确认密码</span>
+                        <input type="password" name="password"/ class="passA">
+                        <p class="Pname3">请再次输入你设置的密码</p>
+                    </div>
+                    <div  class="inputDiv">
+                        <span>验证码</span>
+                        <input type="text"  id="userCheckMa" class="yanzheng" onBlur="test2()"/>
+                        <input type="text"  id="checkcode" />
+                        <span onclick="getCheckCode()">再换一张</span><span id="sp2"></span><br> 
+                    </div><br>
+                    <div class="checkB inputDiv"><span></span>
+                        <input type="checkbox" class="checkBox"/> 我已同意<a href="">《丽子美妆用户注册服务协议》</a>
+                    </div><br>
+                    <div class="buttnB inputDiv">
+                        <input type="button" value="注册" class="buttonA" onclick="save()"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--****************************footer*****************************-->
+<div class="footer">
+    <div class="footercon">
+    	<div class="footerleft">
+        <p>Copyright 2009-2015,辛巴信息技术（杭州）有限公司。业务经营许可证号 浙B2-20010315</p>
+        <p>服务时间：09:00-23:00 客服热线：8888888</p>
+       <ul>
+           <li><img src="../images/t1.png"/></li>
+           <li><img src="../images/t2.png"/></li>
+           <li><img src="../images/t3.png"/></li>
+       </ul>
+        </div>
+        <div class="footerright">
+            <dl>
+                <dt><img src="../images/weixin.jpg"/></dt>
+                <dd>扫描关注微信公众号</dd>
+            </dl>
+            <dl>
+                <dt><img src="../images/app.jpg"/></dt>
+                <dd>手机客户端下载</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<script>
+	//本地存储信息
+	function save(){
+		//alert("11");
+			var data = new Object;
+			data.name = document.getElementById("username").value;
+			data.pwd = document.getElementById("pwd").value;
+			//data.tel = document.getElementById("s-tel").value;
+			//data.more = document.getElementById("more").value;
+			var str = JSON.stringify(data);
+			var time = new Date().getTime();
+			var key = time.toString();
+			localStorage.setItem(time,str);
+		}
+	function Tel(){
+			//alert(1);
+			var username = document.getElementById("username").value;
+				
+				//定义数组，保存匹配的对象
+				//var arr = [];
+				//遍历所有在localStorage中的对象
+			for (var i = 0; i < localStorage.length; i++) {
+				
+				var key = localStorage.key(i);
+				var data = JSON.parse(localStorage.getItem(key));
+				
+				//遍历对象中的属性，如果属性匹配就保存在arr中
+				for (var pTel in data) {
+					//var pValue = data[pTel];
+					//console.log(data);
+					var name = data.name;
+					if(username == name){
+						
+						alert("该用户已经注册过了");
+						document.getElementById("username").value="";
+						return ;
+					}
+					/*if(pValue.indexOf(oTel, 0) != -1){
+						//找到匹配值
+						//arr.push(data);
+						alert("该用户已经注册过了");
+						document.getElementById("s-tel").value="";
+						return ;
+					}*/
+				}
+				
+			}
+			
+	
+			/*var result = '';
+			console.log(arr);
+			for (var i = 0; i < arr.length; i++) {
+				var data = arr[i];
+					result += "姓名：<mark>"+data.name+"</mark><br>";
+					result+="邮箱："+data.email+"<br>";
+					result+="电话："+data.tel+"<br>";
+					result+="备注："+data.more+"<br>";
+			}
+				document.getElementById("msg").innerHTML = result;
+
+
+			
+			//首先遍历每个保存的对象
+			//查找各个属性是否包含这个字段，包含就保存下这个对象
+			//展示所有查找出来的对象*/
+		}
+</script>
+</body>
+</html>

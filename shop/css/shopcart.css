@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#EEE;}
+/*-------------------------------logo-------------------------------------*/
+.logo{width:100%;height:80px;background:#fff;border-bottom:1px solid #ccc;}
+.logo .logocon{width:1090px;height:60px;margin:0 auto;padding-top:20px;}
+/*-------------------------------shopbox-------------------------------------*/
+.shopbox{width:100%;background:#EEE;}
+.shopbox .shopcon{width:940px;padding:0 10px 30px;background:#fff;margin:0 auto;}
+/*-------------------------------CA-------------------------------------*/
+.CA{width:940px;height: 110px;}
+.CAleft{width:116px;height:110px;background:url(../images/shopping/shopping-head.jpg) no-repeat;float:left;background-position: 0px 20px;}
+.CAright{width:583px;height: 90px;float: right;padding-top:20px;}
+.CAright span{display: block;float: left;font-size: 13px;text-align:left;}
+.CAright span em{display: block;margin-top:25px;}
+.CAright  .examine{width:239px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -164px -44px;}
+.CAright  .indent{width:244px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -404px 10px;}
+.CAright  .affirm{width:64px;background:url(../images/shopping/shopping-head.jpg) no-repeat;
+background-position: -635px 10px;}
+.CB{width:938px;height: 30px;background: #666;border:1px solid #DFDFDF;}
+.CB li{float: left;height: 30px;color:#fff;line-height: 30px;text-align:left;font-weight:900;}
+.CB .cher{width:103px;padding-left:27px;}
+.CB .chak{width:370px;}
+.CB .price{width:148px;}
+.CB .count{width:106px;}
+.CB .jifen{width:94px;}
+.CB .opa{width:90px;}
+.CC{width:925px;height:30px;background:#EEE;padding-left:15px;font-weight:900;line-height:30px;}
+.CDbox{width:940px;height:100%;}
+.CD{width:940px;height:88px;border-bottom: 1px solid #E2E2E2;background: #F9F9F9;}
+.CD1,.CD4,.CD5,.CD6,.CD7{height: 58px;float:left;padding-top:30px;}
+.CD .CD1{width:46px;padding-left:26px;}
+.CD .CD2{width:62px;height:73px;float:left;padding-top:15px;}
+.CD .CD2 a{display: block;width:60px;height: 60px;border:1px solid #ccc;}
+.CD .CD3{width:300px;height:68px;float:left;font-size: 11px;padding-top:20px;margin-left:10px;}
+.CD .CD3 p{color:#666;}
+.CD .CD3 p a{color:#000;}
+.CD .CD3 p a:hover{color:#F06;text-decoration:underline;}
+.CD .CD4{width:131px;margin-left:20px;}
+.CD .CD4 strong{width:45px;height:17px;color:#E5004F;line-height: 17px;text-align:center;display:block;float:left;}
+.CD .CD4 span{display: block;width:56px;height:17px;float:left;background:url(../images/shopping/shopping-icon.png) no-repeat;
+background-position: 0px -176px;text-align: center;color:font-size:10px;line-height:17px;color:#fff;}
+.CD .CD5{margin-left:30px;width:125px;}
+.CD .CD5 span{display: block;float: left;border:1px solid #DFDFDF;width:16px;height: 18px;text-align: center;line-height: 18px;color:#B966B9;}
+.CD .CD5 .num{border:0;float:left;width:28px;height:16px;line-height: 18px;text-align: center;color:#B966B9;border-top:1px solid #CCCCCC;border-bottom:1px solid #CCCCCC;}
+.CD .CD6{width:74px;padding-left:15px;}
+.CD .CD7{width:88px;}
+.CD .CD7 .dele{border:0;}
+.CE{width:938px;height:60px;background: #F9F9F9;border:1px solid #DFDFDF;margin-top:30px;padding-top:20px;margin-bottom:30px;}
+.CE .CEleft{width:530px;height:60px;float:left;padding-left:30px;}
+.CE .CEleft span{font-size:14px;margin-right:10px;}
+.CE .CEleft .sum{border:0;width:70px;height:20px;line-height:20px;color:#F03;background:#F9F9F9}
+.CE .CEright{width:328px;height:60px;float:left;padding-left:50px;}
+.CE .CEright h3{float:left;width:80px;height:35px;line-height:35px;background:url(../images/shopping/line1.png);margin-left:30px;text-align:center;font-weight:100;border:1px solid #ccc;}
+.CE .CEright h3 a{color:#000;}
+.CF{width:938px;height:340px;background:#fff;}
+.CF ul{width:938px;height:30px;background:#F9F9F9;border:1px solid #ccc;}
+.CF ul li{float:left;height:30px;padding:0 20px;cursor:pointer;line-height:30px;}
+.CF  dl{width:200px;height:230px;float:left;border:1px solid #ccc;margin:0 15px;text-align:center;}
+.CF dl img{display:inline;}
+.CF dl dt{border-bottom:1px solid #ccc;}
+.CF  dl dd{margin-top:20px;padding:0 10px;}
+
+.CF  dl p a{color:#000;}
+.CF  dl p a:hover{color:#F0C;text-decoration:underline;}
+.CF  dl span{padding-left:30px;color:#ef115a;font-size:18px;}
+.hide{display:none;}
+.show{display:block;width:930px;height:260px;margin-top:10px;}
+.normal{color:black;}
+.hover {color: #fff;background: #abcdef;border: 1px solid #abcdef;border-bottom: 0;}

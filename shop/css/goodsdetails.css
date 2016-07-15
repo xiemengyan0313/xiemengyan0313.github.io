@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+.navcon .n1{position:relative;}
+.navcon .n1:hover .navleft{display:block;}
+.navcon .n1 .navleft{position:absolute;left:0;top:38px;z-index:999;width:218px;background:#c786da;display:none;}
+
+.navleft h1{height:35px;width:208px;padding-left:10px;font-size:14px;line-height:35px;border-bottom:1px solid #ccc;}
+.navleft ul{width:198px;}
+.navleft li{position:relative;z-index:1;width:198px;text-align:left;padding:0 10px 9px;border-bottom:1px dashed #ccc;}
+.navleft ul li div{position:absolute;top:1px;left:218px;bottom:1px;width:382px;border:1px solid #ccc;z-index:100;background:#FCF ;display:none;height:150px;padding-left:18px;}
+.navleft ul li .xiezhuang{height:230px;}
+.navleft ul li div h3{font-size:14px;line-height:36px;}
+.navleft ul li div a{line-height:36px;}
+.navleft li:hover{background:#FCF;}
+.navleft li:hover div{display:block;}
+.navleft ul li p{line-height:18px;}
+.navleft ul li a{color:#333;padding-right:10px;}
+.navleft ul li a:hover{color:#ed145b;}
+.navleft li h4{font-size:14px;}
+.navleft li h4 a{color:#333;}
+.navleft .nan{border:0;} 
+/*--------------------------------goods---------------------------------*/
+.goods{width:100%;background:#fff;}
+.goods .goodscon{width:1090px;height:460px;margin:0 auto;}
+.goods .goodscon h1{width:1090px;height:60px;font-size:16px;line-height:60px;}
+.goods .goodscon .goodsleft{width:500px;height:380px;float:left;padding-top:20px;}
+.goodsleft .left1{width:450px;height:300px;overflow:hidden;padding-left:50px;position:relative;}
+.goodsleft .left1 ul li{float:left;width:266px;height:300px;}
+.goodsleft .left1 img{width:266px;height:240px;}
+#drag{width:100px;height:100px;background:rgba(236,130,88,0.6);position:absolute;left:0px;top:0px;z-index:10;display:none ;}
+.goodsleft .left2{width:450px;height:80px;}
+.goodsleft .left2 ul li{float:left;border:1px solid #ccc;margin:0 8px;}
+.goodsleft .left2 a{height:60px;width:60px;display:block;float:left;}
+#ShowBigPictureBox{position:absolute; top:200px; left:500px; overflow:hidden; border:3px solid #ccc; padding:5px; background-repeat:no-repeat; background-color:#fff; width:400px; height:400px;display:none;}
+#ShowBigPictureBox img{width:800px;height:800px;position: absolute;left:0;top:0;}
+
+
+.goods .goodscon .goodsright{width:550px;height:400px;float:left;padding-left:40px;}
+.goodscon .goodsright em{font-size:24px;color:#F06;font-weight:900;font-style:normal;}
+.goodscon .goodsright i{font-style:normal;margin-left:15px;font-weight:900;}
+.goodscon .goodsright p{padding-bottom:20px;border-top:1px dashed #ccc;padding-top:20px;}
+.goodscon .goodsright p span{color:#fff;background:#66F;font-size:12px;margin-right:15px;}
+.goodscon .goodsright input{text-align:center;color:red;border:0;}
+.goodscon .goodsright p a{color:#F06;}
+.goodscon .goodsright p a:hover{text-decoration:underline;}
+.goodscon .goodsright img{display:inline;margin:0 10px;}
+.goodscon .goodsright .btn3{margin-top:20px;}
+
+
+.goodscon .goodsright #number{border:0;width:50px;border:1px solid #ccc;height:20px;background:#f9f9f9}
+.goodscon .goodsright i{padding:0 8px;background:#f7f7f7;}
+.goodscon .goodsright ul li{height:30px;line-height:30px;border:1px solid #ccc;padding:0 8px;float:left;margin-left:10px;}
+/*--------------------------------detail---------------------------------*/
+.detail{width:100%;background:#fff;}
+.detail .detailcon{width:1090px;margin:0 auto;height:9000px}
+.detail .detailcon .detailleft{width:188px;float:left;}
+.detailcon .detailleft .search{width:186px;height:133px;border:1px solid #ccc;margin-bottom:20px;}
+.detailleft  h2{width:176px;height:40px;line-height:40px;color:#fff;background:#000;font-size:14px;margin-bottom:20px;padding-left:10px;}
+.detailleft .search .txt{width:130px;height:25px;}
+.detailleft .search .btn{margin-left:40px;margin-top:15px;border:0;width:50px;height:25px;border:1px solid #bbb;}
+.detailcon .detailleft .fenlei{width:186px;border:1px solid #ccc;margin-bottom:20px;}
+.detailleft  ul .fl{list-style:disc inside;font-size:14px;margin-left:10px;}
+.detailleft .fenlei .fl2{margin-left:30px;font-size:12px;}
+.detailleft .fenlei .fl2 li{height:25px;line-height:25px;}
+.detailleft .fenlei .fl2 a{color:#000;}
+.detailleft .fenlei .fl2 a:hover{color:#F06;}
+.detailleft .xilie{width:186px;border:1px solid #ccc;}
+.detailleft .xilie img{border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+
+
+
+.detail .detailcon .detailright{width:882px;height:8942px;margin-left:20px;float:left;}
+.detailcon .detailright .detailnav1{width:882px;height:40px;}
+.detailcon .detailright ul{width:882px;height:40px;background:#000;font-size:14px;position:absolute;top:628px;left:340px;}
+.detailcon .detailright ul li{float:left;}
+.detailcon .detailright ul li a{color:#fff;display:block;float:left;height:40px;line-height:40px;padding:0 25px;}
+.detailright h3{width:782px;height:35px;font-size:18px;background:url(../images/line.jpg);line-height:35px;margin-bottom:25px;padding-left:10px;}
+.detailright h3 span{font-size:14px;color:#bbb;margin-left:10px;}
+.detailright img{margin-left:40px;margin-bottom:20px;}
+.detailright .zhiliang{width:882px;height:275px;margin-top:25px;text-align:center;}
+.detailright .zhiliang img{display:inline;}
+.detailright .accredit{width:792px;height:771px;margin-left:90px;}
+.detailright .canshu{width:792px;height:465px;margin-left:90px;}
+.detailright .xiangqing{width:792px;height:5310px;margin-left:90px;}
+.detailright .shipai{width:792px;height:1550px;margin-left:90px;}
+.detailright .shipai p{margin-left:40px;margin-bottom:30px;font-size:16px;}
+.detailright .koubei{width:792px;height:232px;margin-left:90px;}
+.detailright .tuijian{width:792px;height:339px;margin-left:90px;}
